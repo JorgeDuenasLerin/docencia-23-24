@@ -2,14 +2,14 @@
 
 Módulos impartidos en el Juan de la Cierva durante 2023/24
 
-*Desarrollo web*
+- **Desarrollo web**
+    - [Desarrollo web entorno servidor](dwes/README.md)
+    - [Despliegue aplicaciones web](daw/README.md)
+- **Desarrollo multiplataforma**
+    - PSP
+    - PMDM
 
-[Desarrollo web entorno servidor](dwes/README.md)
-[Despliegue aplicaciones web](daw/README.md)
-
-*Desarrollo multiplataforma*
-
-## Calendario
+## Calendario 2023/24
 
 |     	| s1 	| s2 	| s3 	| s4 	| s5 	|
 |-----	|----	|----	|----	|----	|----	|
@@ -31,6 +31,16 @@ e2  -
 fi  - 8-14 mar finales
 jf  - 15 mar - junta primera
 ```
+
+```
+---------------------------------------------------------
+
+                   A partir de aquí
+secciones comunes a los módulos. No hay información útil.
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+```
+
 
 ## Comandos
 
