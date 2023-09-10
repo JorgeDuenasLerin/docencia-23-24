@@ -4,9 +4,9 @@
 
 01-control-versiones-doc
 
-> Control de versiones git
-> Técnicas de documentación
-> 8h
+> Control de versiones git<br>
+> Técnicas de documentación<br>
+> 8h<br>
 
 02-arquitectura-web
 
