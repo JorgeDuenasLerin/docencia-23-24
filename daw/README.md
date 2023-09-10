@@ -6,40 +6,40 @@
 
 > Control de versiones git<br>
 > Técnicas de documentación<br>
-> 8h<br>
+> 8h
 
 02-arquitectura-web
 
-> Principios básicos y protocolos
+> Principios básicos y protocolos<br>
 > 4h
 
 03-servicios
 
-> Sericios DNS, Ficheros, Web. Introducción
+> Sericios DNS, Ficheros, Web. Introducción<br>
 > 8h
 
 04-ficheros
 
-> Implementación de servicio de ficheros y copias seguras ssh
+> Implementación de servicio de ficheros y copias seguras ssh<br>
 > 4h
 
 05-servidor-web
 
-> Configuración de servidores apache y nginx
-> Configuración de bases de datos
-> Despliegue de aplicaciones
+> Configuración de servidores apache y nginx<br>
+> Configuración de bases de datos<br>
+> Despliegue de aplicaciones<br>
 > 21h
 
 06-servidor-aplicaciones
 
-> Despliegue de aplicaciones Java
+> Despliegue de aplicaciones Java<br>
 > 8h
 
 07-contenedores
 
-> Contenedores docker
-> Despliegue con docker compose
-> Revisar todos el temario desde contenedores
+> Contenedores docker<br>
+> Despliegue con docker compose<br>
+> Revisar todos el temario desde contenedores<br>
 > 32h
 
 

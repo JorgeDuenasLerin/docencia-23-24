@@ -4,47 +4,47 @@
 
 01-arquitecturas-herramientas
 
-> Introducción a las arquitecturas web
+> Introducción a las arquitecturas web<br>
 > 10 horas
 
 02-integración-html
 
-> Primeros pasos con el lenguaje php
+> Primeros pasos con el lenguaje php<br>
 > 20 horas
 
 03-programación-web
 
-> Páginas complejas, formularios. POO
+> Páginas complejas, formularios. POO<br>
 > 20 horas
 
 04-acceso-datos
 
-> Recuperación y guardado de información
+> Recuperación y guardado de información<br>
 > 20 horas
 
 05-aplicaciones-web
 
-> Estado, autentificación, registro
+> Estado, autentificación, registro<br>
 > 20 horas
 
 06-mvc
 
-> Introducción a python. Desarollo Django. ORM
+> Introducción a python. Desarollo Django. ORM<br>
 > 40 horas
 
 07-servicios-web
 
-> Generación de APIs, GraphQL, Autentificación
+> Generación de APIs, GraphQL, Autentificación<br>
 > 20 horas
 
 08-spa
 
-> SPA
+> SPA<br>
 > 20 horas
 
 09-híbridas
 
-> Aplicaciones web híbridas
+> Aplicaciones web híbridas<br>
 > 15 horas
 
 ## Temporalización
