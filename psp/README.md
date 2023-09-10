@@ -76,3 +76,16 @@ En el caso suspender alguna evaluación no se contempla recuperación, se puede 
 ## Prácticas
 
 A lo largo de cada unidad de trabajo se realizarán numerosas prácticas obligatorias no evaluables. En estas prácticas se trabajarán todos los aspectos teóricos del módulo.
+
+## Materiales
+
+Programación de servicios y procesos. Editorial Garceta.
+
+[![portada](https://www.garceta.es/images/portada/9317_PSP2.gif)](https://www.garceta.es/catalogo/libro.php?ISBN=978-84-1728-931-7&idd=12)
+
+[https://psp2dam.github.io/psp_pages/es/](https://psp2dam.github.io/psp_pages/es/)
+
+Libros de referencia:
+
+- Sistemas operativos modernos. Andrew S. Tanenbaum
+- Sistemas operativos. William Stallings
