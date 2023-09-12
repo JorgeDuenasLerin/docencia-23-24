@@ -68,6 +68,24 @@ Dentro de las normas de convivencia del centro educativo, remarcar tres:
 
 Y sobre todo: **disfrutar aprendiendo**.
 
+## Observación trabajo aula
+
+Elementos a considerar:
+
+-	El trabajo y la participación en las actividades opcionales y/o obligatorias de carácter individuales y/o colectivas programadas. Hay que tener presente que una actitud permanentemente pasiva puede calificarse como de abandono en una determinada materia, según las directrices de la C.C.P. (Comisión de Coordinación Pedagógica). 
+-	El contenido intelectual y la capacidad de expresión en las intervenciones personales en respuesta a las cuestiones planteadas (sobre contenidos, prácticas, etc.) por el profesor 
+-	La actitud de respeto y tolerancia entre los alumnos y hacia los profesores, medida tanto en los trabajos de grupo y en los debates e intervenciones así como en el día a día. 
+-	La realización de trabajos voluntarios 
+-	La participación positiva y educada en las actividades extraescolares 
+-	La actitud e iniciativa, el interés y el esfuerzo personal.
+
+## Calificación
+
+-	Cada una de los aspectos contemplados a la hora de evaluar el aprendizaje del alumno se superará si se califica con una nota igual o mayor que 5. 
+- Las notas emitidas en las distintas evaluaciones van de 1 a 10, sin decimales. 
+-	En caso de decimales se aplicará un redondeo matemático siempre que la nota sea igual o mayor a 5.
+
+
 ```
 ---------------------------------------------------------
 
