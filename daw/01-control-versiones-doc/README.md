@@ -38,11 +38,23 @@ Remoto github varios usuarios
 
 ## git
 
-Uso de gitflow
+La he liado parda. 
 
-Pullrequest
+### merge vs rebase
+
+### pullrequest
+
+Buen vídeo de explicación. [vídeo](https://www.youtube.com/watch?v=Zqft6yNRuNs&ab_channel=codigofacilito)
+
+### Uso de gitflow
+
+Versiones semánticas. [enlace](https://semver.org/lang/es/)
+Gitflow. [enlace](https://danielkummer.github.io/git-flow-cheatsheet/)
 
 ## phpDoc
 
+[documentación oficial](https://www.phpdoc.org/)
+
 ## mkdocs
 
+[documentación oficial](https://www.mkdocs.org/)
