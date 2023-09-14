@@ -9,6 +9,7 @@
 ## git básico
 
 [Presentación](https://prezi.com/pe4lnopia-fq/git-presentacion/)
+[Cheatsheet](github-git-cheat-sheet.pdf)
 
 Local:
 
@@ -22,6 +23,23 @@ Local 2:
 2. haz distintas ramas
 3. haz merges
 4. provoca conflicto
+
+
+Local 3:
+
+1. Crea repositorio local
+2. Crear varias ramas 
+3. Haz una copia
+4. Observa las diferencias entre merge, merge --squash, rebase
+
+[merge vs rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
+Local 4: (Multi user en local: pull y push)
+
+1. Crea un repositorio central en un directorio
+2. Crea dos directorio para distintos programadores
+3. Realiza distintos pull/push
+
 
 Remoto (tu server):
 
