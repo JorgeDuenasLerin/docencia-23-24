@@ -25,3 +25,5 @@ Programación multiproceso:
 
 Explicación teoría pizarra.
 Introducción a C. [presentación](./First_Program.pdf) - [Apuntes](./PROGRAMACION_EN_LENGUAJE_C.pdf)
+
+[Ejercicios introducción](01-ejercicios.md)
