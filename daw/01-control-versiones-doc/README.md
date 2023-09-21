@@ -40,7 +40,6 @@ Local 4: (Multi user en local: pull y push)
 2. Crea dos directorio para distintos programadores
 3. Realiza distintos pull/push
 
-
 Remoto (tu server):
 
 1. crea un repositorio en tu server
@@ -56,9 +55,13 @@ Remoto github varios usuarios
 
 ## git
 
-La he liado parda. 
+[Piscinas](https://www.youtube.com/watch?v=7DGMqdgZhP4&ab_channel=Superjavi83)
+
+[git](https://vimeo.com/82408340)
 
 ### merge vs rebase
+
+¿Describe con tus palabras cuál es la diferencia?
 
 ### pullrequest
 
