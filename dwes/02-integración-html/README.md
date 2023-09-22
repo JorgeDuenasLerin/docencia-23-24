@@ -8,3 +8,8 @@ Elementos:
 - Funciones de fecha
 - Funciones de ficheros
 - Definición de objetos. Básica
+
+## HTML+PHP y funciones
+
+[contenido](intro.md)
+
