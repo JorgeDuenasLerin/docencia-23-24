@@ -90,22 +90,44 @@ $callback();
 
 ## Ejercicios
 
+Usa los parámetros por defecto y la lista variable de parámetros.
+
+- Crea una función que reciba como primer parámetro una cadena representando una etiqueta HTML, después vendrá una lista variable de parámetros. El primer parámetro por defecto es li. Devolverá una cadena con la etiqueta tantas veces como parámetros con el contenido de estos.
+```php
+magia('li', "Hola mundo", 3, 3.14)
+<li>Hola mundo</li>
+<li>3</li>
+<li>3.14</li>
+
+magia('li', "esto solo")
+<li>esto solo</li>
+```
+- Escribe una función concatenarPalabras que tome una serie de palabras como argumentos y las concatene en una sola cadena separada por espacios.
+- Escribe una función concatenaCon. Recibe un primer paŕametro la cadena con la que concatenar y una lista variable de parámetros. Devuelve la cadena concatenada. Por defecto se concatena con " ".
+
+
+
+Funciones anónimas y callbacks:
+
+- Declara una función anónima que acepte dos números y los multiplique. Invócala con el número 3 y 4
+- Implementa una función llamada aplicarOperacion que tome una función de operación y 2 números. Devuelva el resultado de aplicar la operación a esos números. Define las funciones suma, resta y multiplicación.
+
+
+Modificar variables:
+
+- Crea una función que reciba una cadena y la modifique invirtiéndola.
+- Crea una función que reciba una variable acumulador y un array de enteros. Cambairá el valor de la primera variable con la sum
+- Crea una versiónde la anterior función para que reciba una lista varibales de parámetros.
+- Crea una función combinada de las dos anteriores que le dé igual lo que reciba.
+
+
+
+
 > ¡SIN REVISAR! GPT raw
-
-Nivel de dificultad 1: Conceptos Básicos de Funciones
-
-Escribe una función llamada saludo que imprima "¡Hola, mundo!" cuando se la llame.
-Define una función suma que acepte dos parámetros y devuelva la suma de esos números.
-Crea una función esPar que tome un número como argumento y devuelva true si es par y false si es impar.
-Nivel de dificultad 2: Parámetros por Defecto y Argumentos
-
-Define una función saludoPersonalizado que acepte un nombre como parámetro y, si no se proporciona un nombre, muestre "¡Hola, Invitado!".
-Crea una función calcularAreaTriangulo que acepte la base y la altura como parámetros, y si no se proporcionan, asume valores predeterminados de 5 para la base y 3 para la altura.
-Escribe una función concatenarPalabras que tome una serie de palabras como argumentos y las concatene en una sola cadena separada por espacios.
 Nivel de dificultad 3: Funciones Anónimas y Callbacks
 
-Declara una función anónima que acepte dos números y los multiplique.
-Implementa una función llamada aplicarOperacion que tome una función de operación y dos números, y devuelva el resultado de aplicar la operación a esos números.
+
+
 Crea una función filtrarNumerosPares que tome un arreglo de números y una función de filtro como argumentos, y devuelva un arreglo con solo los números pares que pasan el filtro.
 Nivel de dificultad 4: Funciones Recursivas
 
