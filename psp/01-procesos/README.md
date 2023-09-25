@@ -23,7 +23,12 @@ Programación multiproceso:
 
 ## Programas. Ejecutables. Procesos. Servicios.
 
-Explicación teoría pizarra.
-Introducción a C. [presentación](./First_Program.pdf) - [Apuntes](./PROGRAMACION_EN_LENGUAJE_C.pdf)
+Explicación teoría pizarra:
+- Hardware, SO, Tipos de lenguajes.
+- Procesos y comandos, relaciones entre procesos.
 
-[Ejercicios introducción](01-ejercicios.md)
+Prácticas:
+- Introducción a C. [presentación](./First_Program.pdf) - [Apuntes](./PROGRAMACION_EN_LENGUAJE_C.pdf)
+- [Ejercicios introducción C](01-ejercicios.md)
+- [Comandos de procesos](02-comandos.md)
+- [POSIX](03-llamadas.md)
