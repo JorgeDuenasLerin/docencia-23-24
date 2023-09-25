@@ -52,7 +52,15 @@ saludar(); // Imprimirá "Hola, Invitado"
 Ámbito de variables: PHP permite definir variables locales, globales y estáticas dentro de las funciones, lo que afecta la visibilidad y el tiempo de vida de esas variables.
 
 ```php
-TODO
+$a = "hola";
+
+function imprime() 
+{
+    global $a;
+    echo $a;
+}
+
+imprime();
 ```
 
 Funciones recursivas: Puedes crear funciones que se llamen a sí mismas para resolver problemas recursivos.
@@ -88,6 +96,24 @@ $callback();
 // Imprime: Ah!
 ```
 
+Invocar métodos con los nombres de los parámetros. Se puden poner el nombre del parámetro para especificar que valor pasar.
+
+```php
+function paramNames(mixed $element, int $n = 10)
+{
+    $arr = [];
+    for($i=0;$i<$n;$i++){
+        $arr[]=$element;
+    }
+    return $arr;
+}
+
+echo "<pre>";
+print_r(paramNames(element:"WTF"));
+print_r(paramNames(n: 3,element:"Ah!"));
+echo "</pre>";
+```
+
 ## Ejercicios
 
 Usa los parámetros por defecto y la lista variable de parámetros.
@@ -103,7 +129,7 @@ magia('li', "esto solo")
 <li>esto solo</li>
 ```
 - Escribe una función concatenarPalabras que tome una serie de palabras como argumentos y las concatene en una sola cadena separada por espacios.
-- Escribe una función concatenaCon. Recibe un primer paŕametro la cadena con la que concatenar y una lista variable de parámetros. Devuelve la cadena concatenada. Por defecto se concatena con " ".
+- Escribe una función concatenaCon. Recibe un primer paŕametro la cadena con la que concatenar y una lista variable de parámetros. Devuelve la cadena concatenada. Por defecto se concatena con " ". Usar nombres de parámetros.
 
 
 
