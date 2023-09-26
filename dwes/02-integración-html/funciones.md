@@ -151,7 +151,7 @@ Modificar variables:
 
 Combinando todo:
 
-- Crea una función que reciba una función como primer parámetro y después un número variable de números. La primera función debe devolver un valor boolean. Es una función de filtro. La función devolverá un array con los valores que han pasado el filtro:
+- Crea una función que reciba una función como primer parámetro y después un número variable de números. La primera función debe devolver un valor boolean, es una función de filtro. La función devolverá un array con los valores que han pasado el filtro:
 
 ```php
 $impar = function(){};
@@ -161,6 +161,11 @@ print_r(filtra_array($impar, 1, 4, 56, 7, 8));
 // Array con [1, 7]
 ```
 
+- Crea la función esPrimo y utiliza la función anterior para hacer un filtrado.
+
 - Crea una función al_cubo_array que reciba un array de enteros y lo modifique elevándolos al cubo.
 
-- Crea una función ...
+
+Algo de forms:
+
+- Estas desarrollando una aplicación web para la gestión de eventos festivos, un evento tiene: nombre, fecha, localización y un checkbox de si habrá piñata o no. Haz 3 funciones: mostrar_evento, editar_evento y mostrar_tabla_evento. La primera mostrará la información en un div, la segunda generará un formulario relleno con los datos del evento y la tercera generará una fila de una tabla. (tr con varios tds)
