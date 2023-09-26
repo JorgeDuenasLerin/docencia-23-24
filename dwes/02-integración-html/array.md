@@ -95,39 +95,42 @@ En php hay funciones sobre arrays:
 
 ## ejercicios
 
-Ejercicio 1 - For Loop:
-a) Dado el array $frutas, utiliza un bucle for para imprimir cada fruta en una lista numerada.
-b) Imprime la información en una tabla.
-c) Imprime la información en una tabla sin usar bucles.
+1. Ejercicio 1 - For Loop:
 
-Ejercicio 2 - While Loop:
-a) Dado el array $alumnos, utiliza un bucle while para encontrar al alumno más joven y mostrar su nombre y edad.
-b) Realiza la anterior tarea sin bucle.
-c) Muestra una tabla de los alumnos ordenados por edad
+    1. Dado el array $frutas, utiliza un bucle for para imprimir cada fruta en una lista numerada.
+    2. Imprime la información en una tabla.
+    3. Imprime la información en una tabla sin usar bucles.
 
-Ejercicio 3 - If Statement:
-a) Genera un array con varios eventos. Imprime una tabla con los eventos que han pasado en cursiva y color rojo (fecha anterior a hoy). Los futuros en negrita y verde.
+2. Ejercicio 2 - While Loop:
 
-Ejercicio 4 - Funciones de Arrays:
-a) Dado el array $precios de las frutas, utiliza la función array_sum() para calcular el precio total de todas las frutas en el carrito y luego muestra el resultado.
+    1. Dado el array $alumnos, utiliza un bucle while para encontrar al alumno más joven y mostrar su nombre y edad.
+    2. Realiza la anterior tarea sin bucle.
+    3. Muestra una tabla de los alumnos ordenados por edad
 
+3. Ejercicio 3 - If Statement:
 
-Ejercicio 5 - ForEach Loop:
-a) Añade un array cantidades en kilos. Calcula el precio anterior teniendo en cuenta la cantidad
-b) Repite el a sin el uso de bucles.
-c) Pinta un tabla con nombre, cantidad, precio unitario, precio total por producto y una última fila con row span con el gasto total del carrito.
+1. Genera un array con varios eventos. Imprime una tabla con los eventos que han pasado en cursiva y color rojo (fecha anterior a hoy). Los futuros en negrita y verde.
 
-Ejercicio 6 - If y Funciones de Arrays:
-a) Genera información de 10 libros dentro de la biblioteca. Haz una página que muestre la información de la biblio y una tabla con los libros.
-b) Realiza un pequeño buscador con un formulario. Se pasará en nombre del libro a buscar. Se mostrará el formulario y una tabla, si el libro buscado está aparecerá subrayado y un mensaje "El libro está disponible", si no se encuentra aparecerá un mensaje de "El libro NO está disponible". Siempre aparecerá el listado de libros. array_search
+4. Ejercicio 4 - Funciones de Arrays:
+    1. Dado el array $precios de las frutas, utiliza la función array_sum() para calcular el precio total de todas las frutas en el carrito y luego muestra el resultado.
 
-Ejercicio 7 - Manipulación de Arrays:
+5. Ejercicio 5 - ForEach Loop:
+    1. Añade un array cantidades en kilos. Calcula el precio anterior teniendo en cuenta la cantidad
+    2. Repite el a sin el uso de bucles.
+    3. Pinta un tabla con nombre, cantidad, precio unitario, precio total por producto y una última fila con row span con el gasto total del carrito.
+
+6. Ejercicio 6 - If y Funciones de Arrays:
+    1. Genera información de 10 libros dentro de la biblioteca. Haz una página que muestre la información de la biblio y una tabla con los libros.
+    2. Realiza un pequeño buscador con un formulario. Se pasará en nombre del libro a buscar. Se mostrará el formulario y una tabla, si el libro buscado está aparecerá subrayado y un mensaje "El libro está disponible", si no se encuentra aparecerá un mensaje de "El libro NO está disponible". Siempre aparecerá el listado de libros. array_search
+
+7. Ejercicio 7 - Manipulación de Arrays:
 Dado el array $frutas, agrega una nueva fruta, como "Pera", al final del array utilizando la función array_push(). Luego, muestra el array actualizado.
 
-Ejercicio 8 - While Loop y Funciones de Arrays:
+8. Ejercicio 8 - While Loop y Funciones de Arrays:
+
 Dado el array $alumnos, utiliza un bucle while para encontrar al alumno con el nombre "Ana" y muestra su información (nombre, edad y curso). Puedes usar la función array_shift() para eliminar elementos del array mientras lo recorres.
 
-Ejercicio 9 - Persistencia en ficheros
+9. Ejercicio 9 - Persistencia en ficheros
 
 Explicación de serialización de información
 ```php
@@ -141,7 +144,7 @@ $a = unserialize($s);
 ```
 Crea una web con un listado de cosas por hacer, se añadirán al final del fichero. Tendrá un formulario y una tabla.
 
-Ejercicio 10 - Persistencia JSON
+10. Ejercicio 10 - Persistencia JSON
 
 ```php
 $cars = ["Volvo", "BMW", "Toyota"];
