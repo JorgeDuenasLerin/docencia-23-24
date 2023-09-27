@@ -99,7 +99,7 @@ int main() {
 > ¡OJO! Hay comillas simples y comillas dobles.
 
 ```c
-char cadena = "Esto es una cadena";
+char cadena[] = "Esto es una cadena";
 char letra = cadena[3];
 if(letra == 'o') {
     printf("Entiendo la diferencia entre cadena y caracter");
