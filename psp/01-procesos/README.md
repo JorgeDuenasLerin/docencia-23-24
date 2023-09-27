@@ -21,14 +21,29 @@ Programación multiproceso:
 - Problemas. Inanición, interbloqueos.
 - Programación de aplicaciones multiproceso.
 
-## Programas. Ejecutables. Procesos. Servicios.
+## Teoría 
 
 Explicación teoría pizarra:
 - Hardware, SO, Tipos de lenguajes.
 - Procesos y comandos, relaciones entre procesos.
+- Descriptores de ficheros
+- Argumentos
+- Comunicación procesos
+- Compartición de información (comunicación) entre hilos. Recursos compartidos.
+- Mecanismos de comunicación y sincronización de procesos (semáforos, monitores, paso de mensajes.)
+- Problemas. Inanición, interbloqueos.
+- Programación de aplicaciones multiproceso.
 
-Prácticas:
+## Prácticas:
+
+Se irá avanzando alternando conceptos entre C, llamadas POSIX y comandos del SO. Se mostrará de forma práctica todos los elementos teóricos.
+
 - Introducción a C. [presentación](./First_Program.pdf) - [Apuntes](./PROGRAMACION_EN_LENGUAJE_C.pdf)
 - [Ejercicios introducción C](01-ejercicios.md)
+    - C
+    - cadenas
+    - parámetros
+    - ficheros
 - [Comandos de procesos](02-comandos.md)
 - [POSIX](03-llamadas.md)
+

@@ -1,6 +1,8 @@
 # POSIX
 
-POSIX (Portable Operating System Interface)
+Generales
+
+## POSIX (Portable Operating System Interface)
 
 fork(): Crea un nuevo proceso hijo duplicando el proceso padre, lo que permite la ejecución de múltiples tareas de manera concurrente.
 
@@ -59,3 +61,6 @@ Creación de múltiples procesos hijos: Modifica el programa para que el proceso
 Árbol de procesos: Crea un programa que utilice fork() de manera recursiva para crear una jerarquía de procesos, formando un árbol de procesos. Imprime el ID del proceso padre e hijo en cada nivel del árbol. Observa cómo se crea la estructura jerárquica de procesos.
 
 Uso de valores de retorno: Modifica el programa para que cada proceso hijo devuelva un valor de salida diferente utilizando exit(). El proceso padre debe recoger estos valores de salida utilizando wait() o waitpid() y mostrarlos en su salida.
+
+
+TODO: pipes y dup
