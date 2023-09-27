@@ -30,6 +30,10 @@ cron: Programador de tareas que permite ejecutar comandos de forma automática e
 
 systemctl: Controla servicios y unidades del sistema en sistemas basados en systemd, que es común en muchas distribuciones modernas de Linux.
 
+## Redirecciones
+
+Cómo hacer la redirección de la salida y la entrada. Tras ver las funciones para escribir y leer de ficheros. Haz varios ejercicios con la entrada, salida y errores.
+
 ## Ejercicios
 
 Comando ps:

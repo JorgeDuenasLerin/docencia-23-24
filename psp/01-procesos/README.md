@@ -46,4 +46,5 @@ Se irá avanzando alternando conceptos entre C, llamadas POSIX y comandos del SO
     - ficheros
 - [Comandos de procesos](02-comandos.md)
 - [POSIX](03-llamadas.md)
-
+- [Ejercicio POSIX](04-ejercicios-llamadas.md)
+- [Mini proyecto](10-proyecto.md)

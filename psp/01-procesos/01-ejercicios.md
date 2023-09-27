@@ -96,11 +96,24 @@ int main() {
 }
 ```
 
+> ¡OJO! Hay comillas simples y comillas dobles.
+
+```c
+char cadena = "Esto es una cadena";
+char letra = cadena[3];
+if(letra == 'o') {
+    printf("Entiendo la diferencia entre cadena y caracter");
+}
+```
+
 ## Ejercicio 1: Contar vocales
 Escribe un programa en C que le pida al usuario ingresar una cadena de caracteres y luego cuente y muestre en pantalla el número de vocales (mayúsculas y minúsculas) presentes en la cadena. El programa debe ser sensible a mayúsculas y minúsculas.
 
 ## Ejercicio 2: Palíndromo
 Crea un programa en C que determine si una palabra o frase ingresada por el usuario es un palíndromo o no. Un palíndromo es una palabra o frase que se lee igual de izquierda a derecha y de derecha a izquierda, ignorando espacios y signos de puntuación. El programa debe eliminar los espacios y considerar solo las letras en la verificación.
+
+## Ejercicio 3: array de números
+Los arrays pueden ser de cualquier tipo de dato. Crea un programa que pida al usuario las notas que ha sacado en 5 exámenes. Almacena la información en un array. Después mostrá una lista con la nota de los exámenes y si ha aprobado o no. La nota media, la nota más alta y la nota más baja.
 
 # Ejercicios C parámetros 
 
@@ -145,7 +158,7 @@ $ calcula suma 3 4
 
 ```
 
-# Ejercicios C ficheros
+# C ficheros
 
 El manejo de ficheros en C es una parte importante de la programación, ya que permite a los programas interactuar con archivos en el sistema de archivos. Aquí te presento los conceptos básicos relacionados con el manejo de ficheros en C:
 
@@ -193,6 +206,7 @@ Manejo de archivos binarios y de texto: Puedes trabajar tanto con archivos de te
 
 ```c
 #include <stdio.h>
+#define BUFFER_SIZE 100
 
 int main() {
     // Abrir el archivo en modo escritura de texto
@@ -222,7 +236,7 @@ int main() {
 
     // Leer y mostrar las líneas de texto desde el archivo
     printf("Leyendo el archivo de texto:\n");
-    char linea[100];
+    char linea[BUFFER_SIZE];
     while (fgets(linea, sizeof(linea), archivo) != NULL) {
         printf("%s", linea);
     }
@@ -239,10 +253,13 @@ int main() {
 ```c
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
+#define NOMBRE_LENGTH 50
 
 struct Registro {
     int numero;
-    char nombre[50];
+    char nombre[NOMBRE_LENGTH];
 };
 
 int main() {
@@ -259,11 +276,11 @@ int main() {
     }
 
     // Escribir datos en el archivo
-    datos.numero = 1;
+    datos.numero = 65;
     strcpy(datos.nombre, "Ejemplo 1");
     fwrite(&datos, sizeof(struct Registro), 1, archivo);
 
-    datos.numero = 2;
+    datos.numero = 169;
     strcpy(datos.nombre, "Ejemplo 2");
     fwrite(&datos, sizeof(struct Registro), 1, archivo);
 
