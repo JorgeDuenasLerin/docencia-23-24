@@ -6,7 +6,7 @@
 
 > Control de versiones git<br>
 > Técnicas de documentación<br>
-> 8h
+> 12h
 
 [02-arquitectura-web](02-arquitectura-web/)
 
@@ -15,8 +15,8 @@
 
 03-servicios
 
-> Sericios DNS, Ficheros, Web. Introducción<br>
-> 8h
+> Servicios DNS, Ficheros, Web. Introducción<br>
+> 4h
 
 04-ficheros
 
