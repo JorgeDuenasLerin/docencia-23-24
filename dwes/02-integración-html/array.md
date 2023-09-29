@@ -163,3 +163,16 @@ echo $arr["Ben"];
 echo $arr["Joe"];
 ```
 Utilizando json, crea una web para almacenar películas/series de TV. También almacenarás un rating de cada una de ellas, si no tiene rating es que la quieres ver.
+
+
+11. Reto de arrays.
+
+Escribe una función ```aplastalo()```, recibe un número variable de parámetros que pueden ser a su vez arrays con subarrays, con subarrays, con subarrays, ... ¡no hay límite!. La función devolverá un array con todos los elementos.
+
+```php
+$lista = aplastalo([0,3],42, [2]);
+// $lista tiene [0,3,42,2]
+$lista = aplastalo([0,3],42,[0,4,5,[2,4,[5,6,7]]]);
+// $lista tiene [0,3,42,0,4,5,2,4,5,6,7]
+
+```

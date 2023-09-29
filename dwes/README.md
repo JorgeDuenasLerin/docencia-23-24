@@ -14,7 +14,7 @@
 
 03-programación-web
 
-> Páginas complejas, formularios. POO<br>
+> Páginas complejas, formularios. POO avanzada<br>
 > 20 horas
 
 04-acceso-datos

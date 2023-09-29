@@ -11,5 +11,10 @@ Elementos:
 
 ## HTML+PHP y funciones
 
-[contenido](intro.md)
+Orden:
 
+- [funciones](funciones.md)
+- [arrays](arrays.md)
+- [cadenas](cadenas.md)
+- [objetos](objetos.md)
+- [proyecto](proyecto.md)
