@@ -14,7 +14,7 @@ Elementos:
 Orden:
 
 - [funciones](funciones.md)
-- [arrays](arrays.md)
+- [arrays](array.md)
 - [cadenas](cadenas.md)
 - [objetos](objetos.md)
 - [proyecto](proyecto.md)
