@@ -66,4 +66,31 @@ The DatePicker view enables users to select a date of the day.
     2. Crea un radio button para indicar si el trato ha sido malo, bueno o excelnte
     3. Crea un botón de calcular propina: malo será el precio indicado con los números
 
-4. Modifica el propinatron2000 para que tenga una imgen de cabecera. 
+4. Modifica el propinatron2000 para que tenga una imagen de cabecera. 
+
+5. Pedir cita
+    1. Necesitamos obtener la hora y la fecha en la que un paciente quiere una cita.
+    2. Poner que la clínica abre l-v de 9:00 a 14:00
+    3. El cliente debe introducir un DNI válido.
+    4. Cuando el cliente haya introducido los datos poner una imagen de un "check" o un refuerzo positivo, "su cita se ha guardado satisfactoriamente" y ocultar el resto de controles.
+    5. NOTA: En el futuro esto será otra actividad.
+
+6. PedirCita (La semi realidad)
+    1. Introducción de TOAST.
+    2. Quién me enseñe aplicaciones con esto estará suspenso.
+    3. Lo Toast no se usan para dar mensajes al usuario cuando tenemos acceso a la UI.
+    4. Quién me enseñe aplicaciones con esto estará suspenso.
+    5. Quién me enseñe aplicaciones con esto estará suspenso.
+    6. Cuando el tiempo de la cita sea erróneo o el DNI no válido mostrará un Toast con el error.
+    7. Último punto, importante: Quién me enseñe aplicaciones con esto estará suspenso.
+
+7. PedirCita real! Lo mejor para aprobar.
+    1. Establece controles gráficos en la actividad para mostrar al usuarios lo errores en los campos.
+    2. Bonustrack: Haz que cuando el usuario se equivoque el móvil vibre.
+    3. Despliega la app en tu dispositivo. Necesitas cable USB.
+
+## Reflexión final.
+
+Dos preguntas:
+- ¿Cuál es la diferencia entre usar un Toast y mostrar en la actividad los errores?
+- ¿Cuántos días hay entre la convocatoria ordinaria de marzo y la extraordinaria de junio?
