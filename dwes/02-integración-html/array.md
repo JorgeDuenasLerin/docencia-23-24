@@ -112,7 +112,7 @@ En php hay funciones sobre arrays:
     1. Genera un array con varios eventos. Imprime una tabla con los eventos que han pasado en cursiva y color rojo (fecha anterior a hoy). Los futuros en negrita y verde.
 
 4. Ejercicio 4 - Funciones de Arrays:
-    1. Dado el array $precios de las frutas, utiliza la función array_sum() para calcular el precio total de todas las frutas en el carrito y luego muestra el resultado.
+    1. Dado el array $carrito, utiliza array_map para calcular el precio por ítem vendido, luego utiliza la función array_sum() para calcular el precio total de todas las frutas en el carrito y luego muestra el resultado.
 
 5. Ejercicio 5 - ForEach Loop:
     1. Añade un array cantidades en kilos. Calcula el precio anterior teniendo en cuenta la cantidad
