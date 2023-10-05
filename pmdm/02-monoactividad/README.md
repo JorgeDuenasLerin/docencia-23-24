@@ -59,6 +59,8 @@ The DatePicker view enables users to select a date of the day.
     3. Un check texto blanco, por defecto marcado
     3. Un botón para mostrar.
     4. Un texto de salida. Al dar al botón generar el color de fondo del texto de establecerá al color seleccionado. El texto será el nombre establecido para ese color. El color del texto será blanco si el check está marcado, en caso contrario será negro.
+    5. Soluciones:
+        1. Solucion de Chen: [Java](https://github.com/Xing2707/PMDM/blob/master/app/src/main/java/com/example/pmdm/ut02/u2e2NombreColo.java) [Layout](https://github.com/Xing2707/PMDM/blob/master/app/src/main/res/layout/activity_u2e2_nombre_colo.xml)
 
 3. 1 Manejardor para controlarlos a todos. Propinatron2000
     1. Crea un PAD numérico con botones y los valores del 0 al 9 y un botón borrar 1 número.
