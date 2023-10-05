@@ -60,8 +60,10 @@ network:
   ethernets:
     enp0s3:
      dhcp4: no
-     addresses: [192.168.1.222/24]
-     gateway4: 192.168.1.1
+     addresses: [192.168.1.200/24]
+     routes:
+       - to: default
+         via: 192.168.1.100
      nameservers:
        addresses: [8.8.8.8,8.8.4.4]
 ```
