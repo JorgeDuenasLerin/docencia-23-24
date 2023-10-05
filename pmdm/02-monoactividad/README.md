@@ -52,6 +52,7 @@ The DatePicker view enables users to select a date of the day.
 ## Tareas
 
 1. Crea una App con el juego adivina el número. Tendrá un botón de reiniciar y un botón de jugar. El programa eligirá un número entre 1 y N, tendrás log2(N)-1 intentos. Si ganas el programa mostrará un mensaje en verde has ganado. Si pierdes en rojo indicando que has perdido.
+    1. Solución de Ricardo -> [Java](https://github.com/ricardoharrison/DAM2V/blob/main/PMDM/ProyectosAndroidStudio/u2/Propinator/app/src/main/java/com/rittz/propinator/MainActivity.java) | [Layout](https://github.com/ricardoharrison/DAM2V/blob/main/PMDM/ProyectosAndroidStudio/u2/Propinator/app/src/main/res/layout/activity_main.xml)
 
 2. Crea una app para poner nombre a colores. La aplicación tendrá:
     1. Una caja para poner el nombre
