@@ -4,6 +4,7 @@
 
 ### Libros
 
+Ejemplo básico. Todos los atributos son públicos para facilitar el trabajo.
 Propiedades: título, autor, ISBN, precio.
 Métodos: mostrarInformacion(), cambiarPrecio().
 Uso en página: Una página de detalles de un libro donde se muestre la información del libro y se permita cambiar el precio.
@@ -61,8 +62,7 @@ Uso en página: Una página de banca en línea para gestionar una cuenta bancari
  */
 class CuentaBancaria {
     /** @var string $titular Titular de la cuenta */
-    /** @var string $titular Titular de la cuenta */
-    public $titular;
+    private $titular;
     
     /** @var float $saldo Saldo de la cuenta */
     private $saldo;
