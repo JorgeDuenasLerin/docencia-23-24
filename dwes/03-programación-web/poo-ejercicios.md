@@ -1,298 +1,79 @@
-# Elementos avanzados
+# Ejercicios Avanzados
 
 ## Singleton
 
-El patrón Singleton: Es un patrón software para garantizar que solo existe un objeto instanciado de una clase en cualquier momento de la aplicación.
+Crea un objeto Config que implemente el patrón Singleton
 
-Útil para:
-- Objetos de configuración que deben ser accesibles en todo el sistema
-- Objetos que implementan funcionalidad de Logging
-- Elementos de acceso al sistema de ficheros y bases de datos
+Este objeto config puede almacenar la información del nombre de la aplicación.
+- getNombre, setNombre
 
-```
-<?php
-/** Example taken from http://www.webgeekly.com/tutorials/php/how-to-create-a-singleton-class-in-php/ **/
-class Unico
-{
-    public $cosa;
+Crea una página en la que accedas desde distintos puntos a ese objeto Singleton
 
-    // Hold an instance of the class
-    private static $instance;
-
-    // The singleton method
-    public static function singleton()
-    {
-        if (!isset(self::$instance)) {
-            self::$instance = new Unico();
-        }
-        return self::$instance;
-    }
-
-    private function __construct() {}
-
-}
-$user1 = Unico::singleton();
-$user2 = Unico::singleton();
-$user3 = Unico::singleton();
-?>
-```
-
-## Clases abstractas
-
-Son clases que tienen un método abstracto, al tener un método no definido no se pueden instanciar objetos de esta clase.
-
-Una clase que sea descendiente de esta, deberá definir el/los métodos abstractos o de lo contrario también será abstracta.
-
-```
-<?php
-
-abstract class Instrumento {
-    private $peso;
-
-    public function setPeso(float $peso) {
-        $this->peso = $peso;
-    }
-
-    abstract public function tocar();
-}
-
-class Guitarra extends Instrumento {
-    public function tocar() {
-        echo "Pon acorde en mano izquierda<br/>";
-        echo "Golpea cuerdas<br/>";
-    }
-}
-
-class Saxofon extends Instrumento {
-    public function tocar() {
-        echo "Pon nota en pulsadores<br/>";
-        echo "Sopla aire<br/>";
-    }
-}
-
-?>
-```
+NOTA: Debes observar cómo es el mismo objeto.
 
 
 ## Interfaces
-Las interfaces permiten especificar los métodos que debe implementar un
-objeto que cumpla con la interface.
 
-Estas herramientas de la POO no especifican ninguna parte de la
-implementación. Indican solo el qué y no el cómo.
+Está creando un aplicación con pasarela bancaria, en el momento en el que estás solo tienes integración con el Banco: BancoMalvado. En el futuro del proyecto podrá integrarte con otras pasarelas de pago.
 
-```
-<?php
+Para todos los pagos debemos:
+- establecer conexión
+- comprobar seguridad
+- pagar
 
-interface Ordenable
-{
-    public function estableceClave($k);
-    public function obtieneClave();
-    public function esMayor(Ordenable $o);
-    public function esIgual(Ordenable $o);
-    public function esMenor(Ordenable $o);
-}
-
-class Numero implements Ordenable
-{
-    private $clave;
-
-    public function estableceClave($k)
-    {
-        $this->clave = k;
-    }
-    public function obtieneClave()
-    {
-        return $this->clave;
-    }
-    public function esMayor(Ordenable $o)
-    {
-        return $this->obtieneClave() > $o->obtieneClave();
-    }
-    public function esIgual(Ordenable $o)
-    {
-        return $this->obtieneClave() == $o->obtieneClave();
-    }
-    public function esMenor(Ordenable $o)
-    {
-        return $this->obtieneClave() < $o->obtieneClave();
-    }
-}
-
-?>
-```
-
-## Traits (Rasgos)
-
-Es una herramienta que permite reutilizar y agrupar código para tareas concretas y específicas.
-
-Las funciones agrupadas se deben poder asociar a culaquier tipo de dato o deben estar autocontenidas (se puede añadir al objeto todas las propiedades y toda la funcionalidad).
-
-Esta herramienta añade funcionalidad de forma horizontal.
-
-Ejemplos:
+Para poder en el futuro hacer que tu aplicación funcione con otras pasarelas de pago has decidido crear una Interfaz.
 
 ```
-
-<?php
-
-trait DiceHola
+interface IPlataformaPago
 {
-    public function hola()
-    {
-        echo "Hola mundo!<br/>";
-    }
+    public function estableceConexión():bool;
+    public function compruebaSeguridad():bool;
+    public function pagar(string cuenta, int cantidad);
 }
-
-class Simple
-{
-    use DiceHola;
-
-    private $var;
-
-    public function otraCosa()
-    {
-        echo "Otra cosa";
-    }
-}
-
-$o = new Simple();
-$o->hola();
-$o->otraCosa();
-
-?>
 ```
 
-```
-<?php
-trait Imprimible
-{
-    public function imprime()
-    {
-        foreach (get_object_vars($this) as $propiedad => $valor) {
-            echo "$propiedad $valor<br />";
-        }
-    }
-}
+Haz una implementación del pago con BancoMalvado. Simplemente escribe:
+- conexión BancoMalvado
+- conexión segura BancoMalvado
+- Pago realizado BancoMalvado
 
-class Persona
-{
-    use Imprimeble, DiceHola;
+Realiza un página que cree una conexión con BancoMalvado y realice las 3 acciones.
 
-    public $nombre;
-    public $apellido;
-    public $edad;
-}
+#### Otra implementación
 
-$p = new Persona();
-$p->nombre ="Jorge";
-$p->apellido ="Dueñas";
-$p->edad ="23";
-$p->imprime();
-?>
-```
+Tu aplicación ha tenido mucho éxito y han decidido integrarse dos nuevas plataformas de pago.
+
+Haz una implementación de estas dos plataformas:
+- BitCoinConan
+- BancoMaloMalísimo
+
+Ahora modifica la página anterior para que de forma aleatoria se realice el pago con alguna de las plataformas.
+
+NOTA: Debes utilizar Polimorfismo.
 
 ```
-<?php
-trait ArrayOrJson
+reazlizarTransaccion(IPlataformaDePago $p, string cuenta, int cantidad)
 {
-    public function asArray() : array
-    {
-        return get_object_vars($this);
-    }
-
-    public function asJson() : string
-    {
-        return json_encode($this->asArray());
-    }
+    $p->estableceConexión();
+    $p->compruebaSeguridad();
+    $p->pagar($cuenta, $cantidad);
 }
-
-?>
 ```
 
-```
-<?php
+## Ejercicio completo
 
-trait TieneNombre
-{
-    private $traitTieneNombrenombre;
+Estás creando el juego de clases para un videojuego
 
-    public function estableceNombre($nombre)
-    {
-        $this->traitTieneNombrenombre = $nombre;
-    }
+En el futuro esperas que otros jugadores-programadores creen  muchos tipos de personajes, así que decides crear un Intefaz personaje con los métodos atacar y defender.
 
-    public function diceNombre()
-    {
-        echo "Me llamo $this->traitTieneNombrenombre";
-    }
-}
+Vas a implementar un personaje Humano que escribirá "puñetazo" cuando ataque y "bloqueo" cuando defiende.
 
-class Perro
-{
-    use TieneNombre;
+También vas a implemetnar un persnaje Mago. Todos los magos se dienden diciendo "hechizo protector" pero hay dos tipos de magos. Los personajes MagosBlancos que atacan escribiendo "ataque de luz", y los MagosOscuros que atacan escribiendo "ataque de sombra" (Mago es una clase abstracta)
 
-    public $raza;
-}
+Dentro del juego también tendrás una clase Edificio, que tiene una altura y un método para escribir la altura, una descripción y un método para obtener la descripción.
 
-$tobby = new Perro();
-$tobby->estableceNombre("Tobby");
-$tobby->diceNombre();
+Dentro del juego también hay Objetos que tienen un peso y un método para mostrar el peso, y una descripción y un método para obtener la descripción.
 
-?>
-```
+Tanto los edificios como los objetos tienen una descripción y un método setter y getter para ella. ¡Podemos usar un trait!
 
-Todo Junto
-
-```
-<?php
-interface ICosa
-{
-    public function uno();
-    public function dos();
-}
-
-abstract class Cosilla implements ICosa
-{
-    public function uno()
-    {
-        echo "Uno!<br/>";
-    }
-
-    abstract public function dos();
-}
-
-trait ImprimeNumeroMetodos
-{
-    function imprimeNumeroMetodos()
-    {
-        echo count(get_class_methods($this)) . "<br/>";
-    }
-}
-
-class Cosaza extends Cosilla
-{
-    use ImprimeNumeroMetodos;
-    public function dos()
-    {
-        echo "Dos!<br/>";
-    }
-}
-
-class Cosota extends Cosaza
-{
-    public function medjaronUnTraitDeHerencia()
-    {
-        $this->imprimeNumeroMetodos();
-    }
-}
-
-$o = new Cosaza();
-$o->uno();
-$o->dos();
-$o->imprimeNumeroMetodos();
-
-$on = new Cosota();
-$on->medjaronUnTraitDeHerencia();
-?>
-```
+Tanto los personajes, los edificios y los objetos tienen una posición en el mapa: x y z. Estas posiciones tienen sus métodos getters y setters.
