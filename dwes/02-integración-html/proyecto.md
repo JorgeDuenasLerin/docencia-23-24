@@ -9,10 +9,12 @@ Estructura:
 
 ## Autocarga
 
-# Auto carga de clases
+### Cada clase en un fichero
 
-## 1.- Cada clase en un fichero
-## 2.- Común hacer require de cada fichero
+Si vamos a programar la clase ```Perrito```estará en el fichero ```Perrito.php```
+
+
+### Común hacer require de cada fichero
 
 ```
   Nos lleva a tener en el index un montón de require
@@ -21,7 +23,7 @@ Estructura:
   require 'File3.php';
 ```
 
-## 3.- Si no existe ocurre un error
+### Si no existe ocurre un error
 
 ```
 $product = new Product();
@@ -48,7 +50,7 @@ objeto        ¿Sabemos crearlo?
 
 ```
 
-creamos index.php
+Crea un fichero ```index.php```
 
 ```
 <?php
@@ -66,21 +68,25 @@ echo $p->id;
 ?>
 ```
 
-Error. No existe la clase
+Error. No existe la clase. Vamos a crear un fichero ```Producto.php``` con la clase
 
 ```
-creamos Product.php
+creamos Producto.php
 <?php
-class Product
+class Producto
 {
   public $id = 42;
 }
 ?>
 ```
-Todo ok
 
-## 5.- Cuando el proyecto es muy grande se suelen meter las clases en espacios
-de nombres. Similar a los paquetes Java
+Al volver a ejecutar el código que usa Product ahora funcionará.
+
+
+### Cuando el proyecto es muy grande
+
+Se suelen meter las clases en espacios de nombres. Similar a los paquetes Java
+
 ¿Cómo lo cargamos?
 
 ```
@@ -95,19 +101,19 @@ src/
 
 CARPETA_AUTOLOAD/
   \- src
-    \- App1
+    \- Pack1
       \- Product.php
-    \- App2
+    \- Pack2
       \- User.php
   \- public
     index.php
 ```
 
-Fichero en src/App1/Product.php
+Fichero en src/Pack1/Product.php
 
 ```
 <?php
-namespace App1;
+namespace Pack1;
 class Product
 {
     public $id = 42;
@@ -119,7 +125,7 @@ Fichero en src/App2/User.php
 
 ```
 <?php
-namespace App2;
+namespace Pack2;
 class User
 {
     public $id = 17;
@@ -137,19 +143,16 @@ spl_autoload_register(function ($class) {
     require("$classPath${file}.php");
 });
 
-$p = new App1\Product();
-$u = new App2\User();
+$p = new Pack1\Product();
+$u = new Pack2\User();
 echo $p->id . "    " $u->id;
 
 ?>
 ```
 
-### Ejemplo
 
-Francisco Javier Lasso
-[https://github.com/fJavierLasso/entornoServidor/tree/main/9%20-%20Objetos%20Avanzados%20-%20Abstract%20y%20Trait](https://github.com/fJavierLasso/entornoServidor/tree/main/9%20-%20Objetos%20Avanzados%20-%20Abstract%20y%20Trait)
+### Pregunta abierta
 
-## 6.- Pregunta abierta
 ¿Por qué no tiene un comportamiento por defecto?
 
 Filosofía
