@@ -1,0 +1,11 @@
+form .error {
+    border: 1px solid red;
+}
+
+form .ok {
+    border: 1px solid green;
+}
+
+form img#loading{
+    display: none;
+}
