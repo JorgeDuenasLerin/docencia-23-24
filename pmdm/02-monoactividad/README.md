@@ -52,6 +52,7 @@ The DatePicker view enables users to select a date of the day.
 ## Tareas
 
 1. Crea una App con el juego adivina el número. Tendrá un botón de reiniciar y un botón de jugar. El programa eligirá un número entre 1 y N, tendrás log2(N)-1 intentos. Si ganas el programa mostrará un mensaje en verde has ganado. Si pierdes en rojo indicando que has perdido.
+    1. Solución de Ricardo -> [Java](https://github.com/ricardoharrison/DAM2V/blob/main/PMDM/ProyectosAndroidStudio/GuessIt/app/src/main/java/com/rittz/guessit/MainActivity.java) | [Layout](https://github.com/ricardoharrison/DAM2V/blob/main/PMDM/ProyectosAndroidStudio/GuessIt/app/src/main/res/layout/activity_main.xml)
 
 2. Crea una app para poner nombre a colores. La aplicación tendrá:
     1. Una caja para poner el nombre
@@ -59,13 +60,16 @@ The DatePicker view enables users to select a date of the day.
     3. Un check texto blanco, por defecto marcado
     3. Un botón para mostrar.
     4. Un texto de salida. Al dar al botón generar el color de fondo del texto de establecerá al color seleccionado. El texto será el nombre establecido para ese color. El color del texto será blanco si el check está marcado, en caso contrario será negro.
+    5. Soluciones:
+        1. Solucion de Chen: [Java](https://github.com/Xing2707/PMDM/blob/master/app/src/main/java/com/example/pmdm/ut02/u2e2NombreColo.java) [Layout](https://github.com/Xing2707/PMDM/blob/master/app/src/main/res/layout/activity_u2e2_nombre_colo.xml)
 
 3. 1 Manejardor para controlarlos a todos. Propinatron2000
     1. Crea un PAD numérico con botones y los valores del 0 al 9 y un botón borrar 1 número.
     2. Un label donde mostrar el número que se va acumulando.
     2. Crea un radio button para indicar si el trato ha sido malo, bueno o excelnte
     3. Crea un botón de calcular propina: malo será el precio indicado con los números
-
+    4. Soluciones
+       1. Solucion de Ian: [Java](https://github.com/ianharrisonromero/DAM2Eloy/blob/main/PMDM%20Programaci%C3%B3n%20Multimedia%20y%20Dispositivos%20Moviles/AndroidStudioProjects/Propineitor9000/app/src/main/java/com/example/propineitor9000/MainActivity.java) / [Layout](https://github.com/ianharrisonromero/DAM2Eloy/blob/main/PMDM%20Programaci%C3%B3n%20Multimedia%20y%20Dispositivos%20Moviles/AndroidStudioProjects/Propineitor9000/app/src/main/res/layout/activity_main.xml)
 4. Modifica el propinatron2000 para que tenga una imagen de cabecera. 
 
 5. Pedir cita

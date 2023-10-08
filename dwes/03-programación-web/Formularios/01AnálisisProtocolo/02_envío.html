@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Form1</title>
+<script type="text/javascript" src="js/forms.js" defer></script>
+</head>
+
+<body>
+
+Envío por defecto
+<p>
+  <form action="http://127.0.0.1:8080">
+    <input type="text" name="valor" value="Hola mundo!" />
+    <input type="submit" name="enviar" value="Enviar" />
+  </form>
+</p>
+
+Envío específico a get
+<p>
+  <form action="http://127.0.0.1:8080" method="get">
+    <input type="text" name="valor" value="Hola mundo!" />
+    <input type="submit" name="enviar" value="Enviar" />
+  </form>
+</p>
+
+Envío específico a post
+<p>
+  <form action="http://127.0.0.1:8080" method="post">
+    <input type="text" name="valor" value="Hola mundo!" />
+    <input type="submit" name="enviar" value="Enviar" />
+  </form>
+</p>
+
+
+</body>
+
+</html>
