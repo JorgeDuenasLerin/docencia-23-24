@@ -45,6 +45,38 @@ int main() {
 ## Cálculo de números primos.
 
 
+Ejecución con 
+
+
+```
+N_MIN=100
+N_MAX=999
+ITEMS=99999
+
+time python3 10-primos.py 
+None 0
+
+real    52m12,437s
+user    52m11,359s
+sys     0m0,413s
+```
+
+Ejecución con 10000-99999. Mono proceso.
+
+```
+N_MIN=10000
+N_MAX=99999
+ITEMS=99999
+
+>time python3 10-primos.py 
+(99989, 99978) 199967
+
+real    191m11,507s
+user    191m7,625s
+sys     0m0,567ss
+```
+
+
 
 ## Verificación de passwords.
 
