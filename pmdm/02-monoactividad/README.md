@@ -98,3 +98,14 @@ The DatePicker view enables users to select a date of the day.
 Dos preguntas:
 - ¿Cuál es la diferencia entre usar un Toast y mostrar en la actividad los errores?
 - ¿Cuántos días hay entre la convocatoria ordinaria de marzo y la extraordinaria de junio?
+
+
+## Práctica
+
+Crea un juego de piedra papel o tijera. Con un botón para reiniciar. Jugarás contra la máquina.
+
+> Ojo Si le das a reiniciar pero no has acabado la partida pedirá confirmación con un AlertDialog
+
+Mejoras:
+- Mejórala dando la posibilidad de poder mostrar la pantalla en horizontal y vertical.
+- Haz que cuando pierdas una partida se produzca una vibración de duración media, cuando ganas una corta y cuando pierdes por 3 puntos una larga.
