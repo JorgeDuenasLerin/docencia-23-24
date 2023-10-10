@@ -46,30 +46,39 @@ int main() {
 
 Calcular el md5sum
 
+Instalar la librería de desarrollo:
+``` 
+sudo apt-get install libssl-dev
+```
+
 ```c
+// example.c
+//
+// gcc example.c -lssl -lcrypto -o example
+
+#include <openssl/evp.h>
 #include <stdio.h>
 #include <string.h>
-#include <openssl/md5.h>
 
-void compute_md5(char *str, unsigned char *result) {
-    MD5_CTX ctx;
-    MD5_Init(&ctx);
-    MD5_Update(&ctx, str, strlen(str));
-    MD5_Final(result, &ctx);
+void bytes2md5(const char *data, int len, char *md5buf) {
+  // Based on https://www.openssl.org/docs/manmaster/man3/EVP_DigestUpdate.html
+  EVP_MD_CTX *mdctx = EVP_MD_CTX_new();
+  const EVP_MD *md = EVP_md5();
+  unsigned char md_value[EVP_MAX_MD_SIZE];
+  unsigned int md_len, i;
+  EVP_DigestInit_ex(mdctx, md, NULL);
+  EVP_DigestUpdate(mdctx, data, len);
+  EVP_DigestFinal_ex(mdctx, md_value, &md_len);
+  EVP_MD_CTX_free(mdctx);
+  for (i = 0; i < md_len; i++) {
+    snprintf(&(md5buf[i * 2]), 16 * 2, "%02x", md_value[i]);
+  }
 }
 
-int main() {
-    char *input = "Hello, world!";
-    unsigned char result[MD5_DIGEST_LENGTH];  // MD5_DIGEST_LENGTH es generalmente 16
-    int i;
-
-    compute_md5(input, result);
-
-    printf("MD5(\"%s\") = ", input);
-    for (i = 0; i < MD5_DIGEST_LENGTH; i++)
-        printf("%02x", result[i]);
-    printf("\n");
-
-    return 0;
+int main(void) {
+  const char *hello = "hola";
+  char md5[33]; // 32 characters + null terminator
+  bytes2md5(hello, strlen(hello), md5);
+  printf("%s\n", md5);
 }
 ```
