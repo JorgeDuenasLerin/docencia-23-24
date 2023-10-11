@@ -12,7 +12,7 @@
 Apuntes pizarra hablando de:
 
 - Cliente - Servidor
-- Distribucción de código y actualizaciones
+- Distribución de código y actualizaciones
 - Conceptos
   - HTTP(S)
   - URI
@@ -20,7 +20,7 @@ Apuntes pizarra hablando de:
   - CSS
   - JS
 - Generación dinámica de páginas web
-  - Apache o NGIX
+  - Apache o NGINX
   - PHP, Java, python, ruby
   - Bases de datos
 

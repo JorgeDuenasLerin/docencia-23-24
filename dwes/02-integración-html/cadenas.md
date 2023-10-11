@@ -29,7 +29,7 @@ El formulario pedirá:
 
 Al pulsar el botón enviar se enviará la información a otra página.
 
-El objetivo es utlizar las distintas concatenaciones de cadenas.
+El objetivo es utilizar las distintas concatenaciones de cadenas.
 
 - Cadenas con comillas simples
 - Cadenas con comillas dobles

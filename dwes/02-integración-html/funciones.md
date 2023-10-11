@@ -96,7 +96,7 @@ $callback();
 // Imprime: Ah!
 ```
 
-Invocar métodos con los nombres de los parámetros. Se puden poner el nombre del parámetro para especificar que valor pasar.
+Invocar métodos con los nombres de los parámetros. Se pueden poner el nombre del parámetro para especificar que valor pasar.
 
 ```php
 function paramNames(mixed $element, int $n = 10)
@@ -142,8 +142,8 @@ Funciones anónimas y callbacks:
 Modificar variables:
 
 - Crea una función que reciba una cadena y la modifique invirtiéndola.
-- Crea una función que reciba una variable acumulador y un array de enteros. Cambairá el valor de la primera variable con la sum
-- Crea una versiónde la anterior función para que reciba una lista varibales de parámetros.
+- Crea una función que reciba una variable acumulador y un array de enteros. Cambiará el valor de la primera variable con la sum
+- Crea una versión de la anterior función para que reciba una lista variables de parámetros.
 - Crea una función combinada de las dos anteriores que le dé igual lo que reciba.
 
 
