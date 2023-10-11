@@ -42,34 +42,96 @@ int main() {
 }
 ```
 
-## Fuerza brutal password
+## Cálculo del md5
 
-Calcular el md5sum
+Calcular el md5sum.
+
+Necesitamos la libraría openssl de c.
+
+```bash
+sudo apt-get install libssl-dev
+```
+
+Tenemos un ejemplo mínimo:
 
 ```c
 #include <stdio.h>
 #include <string.h>
-#include <openssl/md5.h>
+#include <openssl/evp.h>
 
-void compute_md5(char *str, unsigned char *result) {
-    MD5_CTX ctx;
-    MD5_Init(&ctx);
-    MD5_Update(&ctx, str, strlen(str));
-    MD5_Final(result, &ctx);
+#define MD5_LEN 16
+
+void generateMD5(const char *string, unsigned char *str_result) {
+    EVP_MD_CTX *ctx;
+    const EVP_MD *md;
+    unsigned char result[EVP_MAX_MD_SIZE];
+
+    ctx = EVP_MD_CTX_new();
+    md = EVP_md5();
+
+    EVP_DigestInit_ex(ctx, md, NULL);
+    EVP_DigestUpdate(ctx, string, strlen(string));
+    EVP_DigestFinal_ex(ctx, result, NULL);
+
+    EVP_MD_CTX_free(ctx);
+
+    for(int i = 0; i < MD5_LEN; i++){   // MD5 result is always 16 bytes
+        sprintf(str_result+(i*2),"%02x", result[i]);
+    }
 }
 
-int main() {
-    char *input = "Hello, world!";
-    unsigned char result[MD5_DIGEST_LENGTH];  // MD5_DIGEST_LENGTH es generalmente 16
-    int i;
+int main(int arc, char *argv[]) {
+    char *string = argv[1];
 
-    compute_md5(input, result);
+    unsigned char result[EVP_MAX_MD_SIZE];
+    unsigned int result_len;
 
-    printf("MD5(\"%s\") = ", input);
-    for (i = 0; i < MD5_DIGEST_LENGTH; i++)
-        printf("%02x", result[i]);
+    generateMD5(string, result);
+
+    printf("MD5(\"%s\") = %s", string, result);
+   
     printf("\n");
 
     return 0;
 }
+```
+
+Para compilarlo hay que establecer que lo queremos enlazar con la librería:
+
+```bash
+gcc md5sum.c -o md5sum -lssl -lcrypto
+```
+
+Podemos comprobar que funciona:
+
+```
+>./md5sum cosa
+MD5("cosa") = 12703dd1411c33587da2004a9434a400
+[:~/Workspace/módulos/docencia-23-24/psp/01-procesos] main(+1/-1)* ± 
+>echo -n "cosa" | md5sum
+12703dd1411c33587da2004a9434a400  -
+[:~/Workspace/módulos/docencia-23-24/psp/01-procesos] main(+1/-1)* ± 
+```
+
+## Fuerza brutal password
+
+Has conseguido acceder al hash de varias contraseñas. Tendrás que explorar por fuerza bruta cuál es el texto original.
+
+Para limitar el problema solo se han usado letras ascii minúsculas y el texto original tiene una longitud de 4 caracteres.
+
+
+```
+582fc884d6299814fbd4f12c1f9ae70f
+74437fabd7c8e8fd178ae89acbe446f2
+28ea19352381b8659df830dd6d5c90a3
+90f077d7759d0d4d21e6867727d4b2bd
+```
+
+Toma tiempos de ejecución.
+
+En las siguientes se usarán mayúsculas y minúsculas. Además tendrán 5 caracteres.
+
+```
+f4a1c8901a3d406f17af67144a3ec71a
+d66e29062829e8ae0313adc5a673f863
 ```
