@@ -78,6 +78,8 @@ The DatePicker view enables users to select a date of the day.
     3. El cliente debe introducir un DNI válido.
     4. Cuando el cliente haya introducido los datos poner una imagen de un "check" o un refuerzo positivo, "su cita se ha guardado satisfactoriamente" y ocultar el resto de controles.
     5. NOTA: En el futuro esto será otra actividad.
+    6. Soluciones
+        1. Solucion de Laura: [Java](https://github.com/LauraCorSan/PMDM-2324/blob/master/app/src/main/java/com/example/pmdm_2324/ut02/u2a5PedirCita.java) / [Layout](https://github.com/LauraCorSan/PMDM-2324/blob/master/app/src/main/res/layout/activity_u2a5_pedir_cita.xml)
 
 6. PedirCita (La semi realidad)
     1. Introducción de TOAST.
