@@ -18,36 +18,41 @@ dup() y dup2(): Duplican un descriptor de archivo existente, lo que es útil par
 
 kill(): Envía una señal a un proceso o grupo de procesos, lo que permite la comunicación y el control entre procesos.
 
-shmget(), shmat(), shmdt(): Estas llamadas al sistema se utilizan para la creación, conexión y desconexión de segmentos de memoria compartida, lo que permite a los procesos compartir datos en la memoria.
-
-msgget(), msgsnd(), msgrcv(): Permiten la creación, envío y recepción de mensajes en colas de mensajes, lo que facilita la comunicación entre procesos a través de mensajes.
-
-semget(), semop(), semctl(): Estas llamadas al sistema se utilizan para la creación, operación y control de conjuntos de semáforos, que son mecanismos de sincronización utilizados para la exclusión mutua entre procesos.
-
-## threads
-
-pthread_create(): Crea un nuevo hilo y comienza su ejecución. Puedes especificar la función que el hilo ejecutará como su punto de entrada.
-
-pthread_join(): Espera a que un hilo termine su ejecución y recupera su estado de salida. Es útil para sincronizar la ejecución de hilos.
-
-pthread_detach(): Marca un hilo como "desvinculado", lo que significa que el sistema liberará automáticamente los recursos del hilo cuando termine su ejecución.
-
-pthread_mutex_init(), pthread_mutex_lock(), pthread_mutex_unlock(): Estas funciones permiten la creación, bloqueo y desbloqueo de mutex (semáforos binarios) para lograr la exclusión mutua entre hilos.
-
-pthread_cond_init(), pthread_cond_wait(), pthread_cond_signal(): Estas funciones se utilizan para crear y gestionar variables de condición, que son útiles para la sincronización de hilos.
-
 ## Señales
 
 signal(): Establece un manejador de señal personalizado para una señal específica. Esto permite que un proceso o hilo maneje señales de manera personalizada cuando se producen.
 
-sigaction(): Proporciona un control más avanzado sobre el manejo de señales en comparación con signal(). Permite especificar opciones detalladas para el manejo de señales, como el uso de funciones de manipulación específicas.
-
 kill(): Envía una señal a un proceso o grupo de procesos desde otro proceso. Esto se utiliza para la comunicación y el control entre procesos o hilos.
 
-sigwait(): Bloquea un hilo hasta que se reciba una señal específica, lo que puede ser útil para sincronizar la ejecución de hilos.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <signal.h>
+#include <unistd.h>
 
-pthread_kill(): Envía una señal a un hilo específico en lugar de a un proceso completo. Esto es útil cuando se trabaja con múltiples hilos en un proceso.
+// Función de controlador de señal para SIGINT
+void sigint_handler(int signo) {
+    printf("Se recibió la señal SIGINT (Ctrl + C)\n");
+    // Aquí puedes realizar acciones adicionales antes de salir si lo deseas
+    exit(0);
+}
 
+int main() {
+    // Registrar un manejador de señales para SIGINT usando la función signal
+    signal(SIGINT, sigint_handler);
+
+    printf("Ejecuta este programa y presiona Ctrl + C para generar una señal SIGINT.\n");
+
+    // Mantén el programa en ejecución para recibir la señal
+    while (1) {
+        sleep(1);
+    }
+
+    return 0;
+}
+```
+
+Utiliza control C ejecutando el proceso. ¿Qué ocurre si le quitas el exit(0)?
 
 ## Ejemplos
 
@@ -309,3 +314,26 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 ```
+
+
+# Otros elementos avanzados
+
+> No entran en el examen
+
+shmget(), shmat(), shmdt(): Estas llamadas al sistema se utilizan para la creación, conexión y desconexión de segmentos de memoria compartida, lo que permite a los procesos compartir datos en la memoria.
+
+msgget(), msgsnd(), msgrcv(): Permiten la creación, envío y recepción de mensajes en colas de mensajes, lo que facilita la comunicación entre procesos a través de mensajes.
+
+semget(), semop(), semctl(): Estas llamadas al sistema se utilizan para la creación, operación y control de conjuntos de semáforos, que son mecanismos de sincronización utilizados para la exclusión mutua entre procesos.
+
+## threads
+
+pthread_create(): Crea un nuevo hilo y comienza su ejecución. Puedes especificar la función que el hilo ejecutará como su punto de entrada.
+
+pthread_join(): Espera a que un hilo termine su ejecución y recupera su estado de salida. Es útil para sincronizar la ejecución de hilos.
+
+pthread_detach(): Marca un hilo como "desvinculado", lo que significa que el sistema liberará automáticamente los recursos del hilo cuando termine su ejecución.
+
+pthread_mutex_init(), pthread_mutex_lock(), pthread_mutex_unlock(): Estas funciones permiten la creación, bloqueo y desbloqueo de mutex (semáforos binarios) para lograr la exclusión mutua entre hilos.
+
+pthread_cond_init(), pthread_cond_wait(), pthread_cond_signal(): Estas funciones se utilizan para crear y gestionar variables de condición, que son útiles para la sincronización de hilos.
