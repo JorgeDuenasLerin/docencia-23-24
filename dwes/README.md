@@ -7,12 +7,12 @@
 > Introducción a las arquitecturas web<br>
 > 10 horas
 
-02-integración-html
+[02-integración-html](02-integración-html/README.md)
 
 > Primeros pasos con el lenguaje php<br>
 > 20 horas
 
-03-programación-web
+[03-programación-web](03-programación-web/README.md)
 
 > Páginas complejas, formularios. POO avanzada<br>
 > 20 horas
