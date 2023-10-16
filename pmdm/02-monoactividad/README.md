@@ -80,6 +80,8 @@ The DatePicker view enables users to select a date of the day.
     5. NOTA: En el futuro esto será otra actividad.
     6. Soluciones
         1. Solucion de Laura: [Java](https://github.com/LauraCorSan/PMDM-2324/blob/master/app/src/main/java/com/example/pmdm_2324/ut02/u2a5PedirCita.java) / [Layout](https://github.com/LauraCorSan/PMDM-2324/blob/master/app/src/main/res/layout/activity_u2a5_pedir_cita.xml)
+        2. Solución de Alberto: [Java](https://github.com/AlbertoMorenoArcos/PMDM2324/blob/master/app/src/main/java/com/example/pmdm2324/ut02/u2a5Citatron4000.java) /
+                                   [Layout](https://github.com/AlbertoMorenoArcos/PMDM2324/blob/master/app/src/main/res/layout/activity_u2a5_citatron4000.xml)
 
 6. PedirCita (La semi realidad)
     1. Introducción de TOAST.
