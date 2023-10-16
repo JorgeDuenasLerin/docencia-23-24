@@ -1,6 +1,6 @@
 # Arrays
 
-Se definen con ```[]``` o con ```array()```. PAra gustos, colores.
+Se definen con ```[]``` o con ```array()```. Para gustos, colores.
 
 ## ejemplos
 
