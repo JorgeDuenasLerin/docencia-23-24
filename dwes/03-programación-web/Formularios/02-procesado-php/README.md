@@ -3,16 +3,15 @@
 http://php.net/manual/es/language.variables.superglobals.php
 
 ¿Qué son?
+
 Son variables siempre disponibles que tienen información variada.
 El tipo de estas variables son arrays.
 
-Haz una página que escriba el volcado de de la variable ```$_SERVER;``` en formato
-clave - valor <br />
+Haz una página que escriba el volcado de de la variable ```$_SERVER``` en formato ```clave - valor <br />```
 
 ## 01 Dirección IP
 
-Haz una página que diga cuál es el sistema operativo del cliente y desde qué
-dirección ip lo está haciendo.
+Haz una página que diga cuál es el sistema operativo del cliente y desde qué dirección ip está haciendo la petición.
 
 ## 02 Lenguaje
 
@@ -20,18 +19,17 @@ Modifica el ejercicio anterior para que escriba mensajes de bienvenida dependien
 
 Lenguajes: Inglés, Español o Otro.
 
-NOTA: Intenta que sean lenguajes difíciles.
-
+> NOTA: Intenta que sean lenguajes difíciles.
 
 # Obteniendo información de la url. PETICIÓN GET
 
 ¿Cómo saber si estoy recibiendo información de un formulario?
-1.- Escribe un formulario que envíe un dato con get
-2.- Observa cómo cambia la url
-3.- Crea una página procesador.php que obtenga ese valor del ```_GET```
-4.- Esta página escribirá:
-    \- Si nos llegan datos "Recibiendo formulario"
-    \- Si no escribirá un enlace al formulario
+1. Escribe un formulario que envíe un dato con get
+2. Observa cómo cambia la url
+3. Crea una página ```procesador.php``` que obtenga ese valor del ```_GET```
+4. Esta página escribirá:
+  - Si nos llegan datos "Recibiendo formulario"
+  - Si no escribirá un enlace al formulario
 
 
 ¿Cómo saber si un dato ha sido enviado?

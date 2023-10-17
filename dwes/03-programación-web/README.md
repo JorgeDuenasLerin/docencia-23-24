@@ -8,11 +8,9 @@ Páginas complejas, formularios. POO avanzada
 
 Material:
 - [Objetos](./poo.md)
-- [Objetos Avanzados](./poo.md)
+- [Objetos Avanzados](./poo-avanzados.md)
 - [Ejercicios](./poo-ejercicios.md)
 
 ## Formularios
 
-[Formularios PHP](./formularios.md)
-
-
+[Formularios PHP](./Formularios/)
