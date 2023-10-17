@@ -77,3 +77,10 @@ Dentro del juego también hay ```Objetos``` que tienen un peso y un método para
 Tanto los edificios como los objetos tienen una descripción y un método setter y getter para ella. ¡Podemos usar un trait!
 
 Tanto los personajes, los edificios y los objetos tienen una posición en el mapa: x y z. Estas posiciones tienen sus métodos getters y setters. (Aquí también puedes utilizar traits)
+
+
+### Ejemplo
+
+> ¡¡Spoiler ALERT!!
+
+[Francisco Javier Lasso solución](https://github.com/fJavierLasso/entornoServidor/tree/main/7.%20Objetos%20Avanzados/9%20-%20Objetos%20Avanzados%20-%20Abstract%20y%20Trait)

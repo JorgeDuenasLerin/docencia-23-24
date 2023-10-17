@@ -189,7 +189,3 @@ Usuario Jorge sube a nivel X.
 Imprimir Jorge
 -> HTML con el párrafo azul claro y la información.
 ```
-
-### Ejemplo
-
-[Francisco Javier Lasso solución](https://github.com/fJavierLasso/entornoServidor/tree/main/7.%20Objetos%20Avanzados/9%20-%20Objetos%20Avanzados%20-%20Abstract%20y%20Trait)
