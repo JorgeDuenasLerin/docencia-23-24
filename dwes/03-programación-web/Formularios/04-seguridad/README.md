@@ -1,6 +1,0 @@
-# Ataques básicos
-
-XSS
-
-SQLi
-
