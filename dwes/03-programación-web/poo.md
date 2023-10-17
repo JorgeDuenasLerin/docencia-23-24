@@ -26,7 +26,6 @@ Tendrá una constante privada para almacenar PI
 
 Necesitas definir el fichero con la clase por un lado y por otro la página que lo usa.
 
-
 ### 02. Crea la clase CuentaBancaria
 
 Atributos:
@@ -130,13 +129,11 @@ Crea una página que:
 
 ### 04. Usuarios deportivos
 
-Para todos los ejercicios se debe describir la estructura de clases y
-definir sus métodos. Para no implementar la funcionalidad que representan
-en este punto escribiremos la acción que estamos realizando. Por ejemplo:
-- Si estamos implementando el método pagar() en la clase PayPal al
-   llamar a este método de un objeto PayPal se escribirá "Pago con PayPal"
-- Si estamos implementando el método disparar en la clase Rifle se escribirá
-   "Disparo con rifle"
+Para todos los ejercicios se debe describir la estructura de clases y definir sus métodos. Para no implementar la funcionalidad que representan en este punto escribiremos la acción que estamos realizando.
+
+Por ejemplo:
+- Si estamos implementando el método pagar() en la clase PayPal al llamar a este método de un objeto PayPal se escribirá "Pago con PayPal"
+- Si estamos implementando el método disparar en la clase Rifle se escribirá "Disparo con rifle"
 
 
 Junto con la definición de clases tendrá que haber una o varias páginas de test donde se compruebe que la funcionalidad se corresponde con los requisitos.
@@ -187,5 +184,4 @@ Imprimir Jorge
 
 ### Ejemplo
 
-Francisco Javier Lasso
-[https://github.com/fJavierLasso/entornoServidor/tree/main/9%20-%20Objetos%20Avanzados%20-%20Abstract%20y%20Trait](https://github.com/fJavierLasso/entornoServidor/tree/main/9%20-%20Objetos%20Avanzados%20-%20Abstract%20y%20Trait)
+[Francisco Javier Lasso solución](https://github.com/fJavierLasso/entornoServidor/tree/main/7.%20Objetos%20Avanzados/9%20-%20Objetos%20Avanzados%20-%20Abstract%20y%20Trait)

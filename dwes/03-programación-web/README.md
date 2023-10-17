@@ -7,9 +7,9 @@ Páginas complejas, formularios. POO avanzada
 ## POO
 
 Material:
-- [Objetos][./poo.md]
-- [Objetos Avanzados][./poo.md]
-- [Ejercicios][./poo-ejercicios.md]
+- [Objetos](./poo.md)
+- [Objetos Avanzados](./poo.md)
+- [Ejercicios](./poo-ejercicios.md)
 
 ## Formularios
 
