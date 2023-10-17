@@ -108,7 +108,6 @@ No lleva ningún coche.
 ```
 
 Crea una página que:
-- Cree un array vacío.
 - Cree un coche con matrícula 1000, marca BMV, carga 30
 - Cree un coche con remolque y matrícula 1001, marca Renault, carga 30 y carga remolque 200
 - Cree un coche con matrícula 1002, marca Porche, carga 40
@@ -135,9 +134,7 @@ Por ejemplo:
 - Si estamos implementando el método pagar() en la clase PayPal al llamar a este método de un objeto PayPal se escribirá "Pago con PayPal"
 - Si estamos implementando el método disparar en la clase Rifle se escribirá "Disparo con rifle"
 
-
 Junto con la definición de clases tendrá que haber una o varias páginas de test donde se compruebe que la funcionalidad se corresponde con los requisitos.
-
 
 Estamos desarrollando una aplicación para organizar partidos de varios deportes.
 - NOTA GENERAL: No es necesario crear la clase Partido
@@ -157,16 +154,26 @@ Dentro de las operaciones que podremos realizar con estos usuarios tenemos:
     - NOTA3: Quizá tengas que usar alguna constante.
 - imprimirInformación: Escribirá un elemento párrafo con la información del usuario. Para diferenciar este párrafo del resto de elementos escritos, el párrafo tendrá un color azul claro.
     - NOTA: Tendrás que usar css
-    - Dentro del párrafo aparecerá un ul con li y la información de sus resultas previos.
+    - Dentro del párrafo aparecerá un ul con li y la información de sus resultados previos.
 
 Para ganar dinero tenemos otro tipo de usuario: UsuarioPremium. Para estos usuarios solo hará falta ganar 3 partidos seguidos para subir nivel. Cuando se escriba información sobre este tipo de usuarios deberá aparecer junto al nombre entre paréntesis la palabra Premium (Premium)
 
 También necesitamos tener otro tipo de usuario administrador, este usuario tendrá la posibilidad de crear partidos y además la forma que tiene de subir nivel es similar a los usuarios premium. Cuando se escriba el nombre de estos
 usuarios deberá aparece (Admin)
-- Estos usuarios tendrán la función crearPartido
 
-Junto a la codificación de las clases crea 3 páginas que cree usuarios con distintos roles y vaya introduciendo resultados para verificar que la aplicación se comporta de la forma esperada.
+- Estos usuarios tendrán la función crearPartido (Recuerda, solo escribe partido creado)
 
+Junto a la codificación de las clases crea varias páginas que cree usuarios con distintos roles y vaya introduciendo resultados para verificar que la aplicación se comporta de la forma esperada. NO ES CON UN FORMULARIO.
+
+> NO ES CON UN FORMULARIO, ES UNA PÁGINA
+
+```php
+$j = new Jugador("Jorge");
+$p = new Jugador("Pepe");
+$j->introducirResultado(VICTORIA);
+$p->introducirResultado(DERROTA);
+...
+```
 
 Ejemplo de salida:
 ```
