@@ -113,3 +113,5 @@ Crea un juego de piedra papel o tijera. Con un botón para reiniciar. Jugarás c
 Mejoras:
 - Mejórala dando la posibilidad de poder mostrar la pantalla en horizontal y vertical.
 - Haz que cuando pierdas una partida se produzca una vibración de duración media, cuando ganas una corta y cuando pierdes por 3 puntos una larga.
+- Soluciones
+      1.Solucion de Zhouyi [Java](https://github.com/WINDOWEXPRESS/ASPracticas/blob/main/app/src/main/java/com/example/aspracticas/ut02/u2e6/JuegoPierdraPapelTijera.java) / [Java](https://github.com/WINDOWEXPRESS/ASPracticas/blob/main/app/src/main/java/com/example/aspracticas/ut02/u2e6/Opcion.java) / [Layout](https://github.com/WINDOWEXPRESS/ASPracticas/blob/main/app/src/main/res/layout/activity_juego_pierdra_papel_tijera.xml) / [Layout](https://github.com/WINDOWEXPRESS/ASPracticas/blob/main/app/src/main/res/layout/u2a6_perfil_jugador.xml) / [Layout](https://github.com/WINDOWEXPRESS/ASPracticas/blob/main/app/src/main/res/layout-land/activity_juego_pierdra_papel_tijera.xml)
