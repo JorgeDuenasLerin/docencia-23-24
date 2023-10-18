@@ -48,5 +48,6 @@ Se irá avanzando alternando conceptos entre C, llamadas POSIX y comandos del SO
 - [POSIX](03-llamadas.md)
 - [Ejercicio POSIX](04-ejercicios-llamadas.md)
 - [Mini proyecto](10-proyecto.md)
+- [Procesos Java](https://www.geeksforgeeks.org/java-lang-processbuilder-class-java/)
 
 [Ejercicio de entrenamiento](05-entrenamiento.md)
