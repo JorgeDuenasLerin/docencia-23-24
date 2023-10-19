@@ -18,3 +18,7 @@ Orden:
 - [cadenas](cadenas.md)
 - [objetos](objetos.md)
 - [proyecto](proyecto.md)
+
+## Planetas
+
+La solución del ejercicios de los planetas: [solución](./proyecto-planetas/)

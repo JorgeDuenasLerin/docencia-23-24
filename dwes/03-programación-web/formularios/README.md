@@ -1,7 +1,6 @@
 # PHP-form-teaching
 Cómo se procesan formularios
 
-
 ## Elementos
 
 Validación
@@ -49,16 +48,24 @@ En la misma página
 Para formularios sencillos lo mejor es poner la lógica de procesado en la misma
 página según avancemos en la asignatura veremos otras posibles configuraciones.
 
-Por ejemplo, el proceso de autetificación a través de varios medios es muy
+Por ejemplo, el proceso de autentificación a través de varios medios es muy
 complejo y lo mejor es centralizar el proceso en un punto.
 
 ## Orden
 
-- Análisis del protocolo
-- Ejemplos de procesado de PHP
-- Práctica Guiada
+- [Análisis del protocolo](./01-análisis-protocolo/)
+- [Ejemplos de procesado de PHP](./02-procesado-php/)
+- [Práctica Guiada](./03-práctica-guiada/)
     - Dos tipo de valores
     - Mostrar errores
     - Guardar información en ficheros
     - Sacar listado
 - Práctica mini proyecto
+
+Práctica Guiada de otros años: [2022-2023](./03-práctica-guiada/temazos/)
+
+## Mini ejemplo AJAX
+
+[Ejemplo](./10-bonus-ajax/)
+
+Son peticiones AJAX antiguo. TODO: Actualizar.
