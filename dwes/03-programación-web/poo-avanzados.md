@@ -1,5 +1,11 @@
 # Elementos avanzados
 
+## self vs this vs static
+
+> OJO self y static para acceder cuando hay herencia
+
+[https://www.php.net/manual/en/language.oop5.paamayim-nekudotayim.php](https://www.php.net/manual/en/language.oop5.paamayim-nekudotayim.php)
+
 ## Singleton
 
 El patrón Singleton: Es un patrón software para garantizar que solo existe un objeto instanciado de una clase en cualquier momento de la aplicación.
