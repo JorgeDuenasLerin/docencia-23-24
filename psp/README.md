@@ -8,7 +8,7 @@
 > Programación de proceses Java<br>
 > 20h
 
-02-hilos
+[02-hilos](02-hilos/README.md)
 
 > Programación Hilos<br>
 > Sincronización<br>
