@@ -60,6 +60,46 @@ boton.setOnClickListener(new View.OnClickListener() {
 });
 ```
 
+### Lanzamiento implícito
+
+No se especifica la actividad que lo resolverá, va implicito en el intento.
+
+https://developer.android.com/guide/components/intents-common?hl=es-419#Phone
+
+En siguientes temas utilizaremos permisos, esta es una versión que no requiere permisos.
+
+Añade en el manifest:
+
+```
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+        </intent>
+    </queries>
+
+    ... resto de archivo ...
+```
+
+Ahora puede usar este código, el manifest indica que nuestra Aplicaión puede consultar ```intent.resolveActivity(getPackageManager())```.
+
+```
+public void dialPhoneNumber(String phoneNumber) {
+    Intent intent = new Intent(Intent.ACTION_DIAL);
+    intent.setData(Uri.parse("tel:" + "666666666"));
+    if (intent.resolveActivity(getPackageManager()) != null) {
+        startActivity(intent);
+    } else {
+        // TODO: Mostrar error!
+    }
+}
+```
+
+Busca cómo abrir un navegador con una web, reproducir un video u otros intent que no requieran permisos.
+
+
 ## Tareas Envío
 
 ### 01 Calentamiento
@@ -144,3 +184,13 @@ intent.putExtra(Blabla.KEY_NAME, myObject);
 Para recibir
 myObject = (YourClass) getIntent().getSerializableExtra(Blabla.KEY_NAME);
 ```
+
+
+### 09 Intent implícitos
+
+Crea una página web con 3 botones:
+
+- El primero abrirá un navegador con tu canción favorita.
+- El Segundo marcar el número 666 (The Number of the Beast)
+- El Tercero prepara un sms para tu amigo Paco con el mensaje "Te veo hoy a las 6pm".
+- El Cuarto lanzará otro Intent implicito a tu elección.
