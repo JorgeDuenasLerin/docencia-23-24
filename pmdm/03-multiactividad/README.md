@@ -139,8 +139,8 @@ Debe implementar
 public class YourClass implements Serializable {
 
 Para enviar
-intent.putExtra("KEY_NAME", myObject);
+intent.putExtra(Blabla.KEY_NAME, myObject);
 
 Para recibir
-myObject = (YourClass) getIntent().getSerializableExtra("KEY_NAME");
+myObject = (YourClass) getIntent().getSerializableExtra(Blabla.KEY_NAME);
 ```
