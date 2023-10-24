@@ -16,6 +16,16 @@ Hablar de directivas básicas:
     - FollowSymLinks: Seguir enlaces.
 - AllowOverride y .htaccess
 
+Estas se pueden definir a nivel de Directorio o nivel de Localización
+
+### Directory vs Location
+
+```
+La directiva Directory sólo funciona para objetos del sistema de archivos (por ejemplo, /var/www/mypage), mientras que la directiva Location sólo funciona para URLs (la parte que sigue al nombre de dominio de su sitio, por ejemplo, www.mypage.com/mylocation sería /mylocation).
+
+El uso es sencillo - usa Location si necesitas ajustar los derechos de acceso por una URL, y usa Directory si necesita controlar los derechos de acceso a un directorio (y sus subdirectorios) en el sistema de archivos.
+```
+
 ### Restricciones de acceso
 
 [https://httpd.apache.org/docs/trunk/es/howto/access.html](https://httpd.apache.org/docs/trunk/es/howto/access.html)
@@ -40,13 +50,7 @@ Allow from example.org
 Deny from foo.example.org
 ```
 
-### Directory vs Location
 
-```
-Directory directive works only for filesystem objects (e.g. /var/www/mypage, C:\www\mypage), while Location directive works only for URLs (the part after your site domain name, e.g. www.mypage.com/mylocation).
-
-The usage is straightforward - you would use Location if you need to fine tune access rights by an URL, and you would use Directory if you need to control access rights to a directory (and its subdirectories) in the filesystem.
-```
 
 ## Configuración de base datos
 
