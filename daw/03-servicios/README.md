@@ -56,14 +56,30 @@ Deny from foo.example.org
 
 Configurar distintos motores y lenguajes para acceder a base de datos.
 
+```
 mariadb
 postgress
 
 php
 python
+```
 
+```
 https://levelup.gitconnected.com/working-with-apache-in-python-a-practical-guide-with-a-flask-app-example-cce141725633
+
+```
 
 ## Envío de correo
 
 Hablar del protocolo de correo
+
+conectarte por tls/ssl
+
+```
+openssl s_client -connect smtp.educa.madrid.org:587 -crlf -quiet -starttls smtp
+```
+
+```
+EHLO
+AUTH LOGIN
+```
