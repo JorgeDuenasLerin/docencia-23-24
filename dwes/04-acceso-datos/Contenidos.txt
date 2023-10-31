@@ -1,0 +1,8 @@
+Utilización de técnicas de acceso a datos:
+— Establecimiento de conexiones.
+— Recuperación y edición de información.
+— Utilización de conjuntos de resultados.
+— Ejecución de sentencias SQL (Structured Query Language).
+— Transacciones.
+— Serialización.
+— Utilización de otros orígenes de datos.

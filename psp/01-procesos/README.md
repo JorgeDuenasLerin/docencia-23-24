@@ -48,7 +48,22 @@ Se irá avanzando alternando conceptos entre C, llamadas POSIX y comandos del SO
 - [POSIX](03-llamadas.md)
 - [Ejercicio POSIX](04-ejercicios-llamadas.md)
 - [Mini proyecto](10-proyecto.md)
-- [Procesos Java](https://psp2dam.github.io/psp_pages/es/unit2/)
-- [Más Procesos Java](https://www.geeksforgeeks.org/java-lang-processbuilder-class-java/)
 
 [Ejercicio de entrenamiento](05-entrenamiento.md)
+
+## Procesos JAVA
+
+Conceptos:
+- Ejecución
+- Parámetro
+- Variables de entorno
+- Códigos de estado
+- E/S
+
+Ejemplos:
+- [Procesos Java](https://psp2dam.github.io/psp_pages/es/unit2/)
+    - 2.1 Introducción, ver por encima.
+    - 2.2 Todo.
+    - 2.3 Entrada - Salida y redirecciones. Hasta Pipelines.
+- [Más Procesos Java](https://www.geeksforgeeks.org/java-lang-processbuilder-class-java/)
+
