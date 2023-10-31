@@ -1,0 +1,76 @@
+Depuración
+===============================
+
+Herramienta básica de desarrollo.
+
+Común: gente perezosa que no quiere perder el tiempo de 30 minutos en configurar
+el debug y pierde en cada desarrollo horas y horas escribiendo trazas con echo
+y con var_dump. Llegando al punto en el que ciertas cosas no se pueden comprobar
+con var_dump y se encuentran con errores que no son capaces de detectar.
+
+
+La ejecución en modo debug
+**************************
+Cuando un software se ejecuta en modo debug, le pide a la CPU que provoque una
+excepción software tras la ejecución de cada instrucción. El depurador se
+encarga de detectar esta excepción y actualizar la información sobre la
+ejecución: línea ejecutada, estado de la variables, estado de la pila, etc.
+
+NOTA: En el caso de los lenguajes interpretados el procesador no es hardware
+con lo que este modo de depuración puede ocurrir a nivel de interprete.
+
+
+La ejecución remota en modo debug
+*********************************
+Cuando estamos en desarrollo web la ejecución del código PHP ocurre en una
+máquina remota con lo que debemos configurar un servicio de depuración y
+configurar al nuestro entorno de desarrollo (IDE) para que se conecte a él.
+
+
+XDEBUG
+******
+Extensión de PHP para permitir la depuración.
+
+Si tu distribución/sistema operativo lo tiene en el repositorio
+apt install xdebug
+
+Ello instala el software y configura el php.ini para utilizarlo
+
+Si no, mira la documentación:
+https://xdebug.org/docs/install
+
+
+NOTA: Es una muy mala idea tener este tipo de configuraciones en entornos en
+producción!!
+
+Verificando la instalación
+Ejecuta:
+$ php -m
+Verifica que xdebug aparece
+$ php -m | debug
+
+
+Verificando instalación en apache
+Crea un página que llame a la funcion phpinfo()
+Verifica que está la información
+¿Qué ocurre?
+¿Qué debemos hacer?
+
+
+Conectando el IDE al XDEBUG
+***************************
+
+Atom
+edit > preferences > install
+
+Buscar php-xdebug
+Instalar php-xdebug
+
+Este plug-in tiene diferentes dependencias, instala todas.
+
+Buscar atom-debugger
+Instalar atom-debugger
+
+
+Configurar
+Cuando hemos instalado antes xdebug

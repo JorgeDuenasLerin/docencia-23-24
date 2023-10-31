@@ -1,0 +1,92 @@
+Otros orígenes
+==============
+
+Si deseamos que nuestras aplicaciones utilicen servicios externos. La integración
+con estos se realiza a través de llamadas a un determinado API.
+https://en.wikipedia.org/wiki/Application_programming_interface
+
+Este API ofrece una interface HTTP, a través de peticiones GET y POST obtenemos
+la información deseada.
+
+Ejemplo de API inventadas:
+
+GET
+htttp://apifalsa123.com/buscatweet?info='20N'
+
+<- Devolverá en algún formato los tweets relacionados con el 20N, puede ser
+JSON, XML u otro formato
+
+
+POST
+htttp://apifalsa123.com/realizapago
+Datos en POST:
+usuario=jorge
+clave_secreta=$·"%FDWF$"(%$"SDFASS%$·""
+cantidad=20.0
+factura=1132
+
+<- Devolverá un JSON, un XML u otro formato con la información del resultado
+de la operación.
+
+
+Ejemplos de acceso a API
+************************
+Twitter
+https://developer.twitter.com/en/docs/api-reference-index.html
+
+Facebook
+https://developers.facebook.com/docs/graph-api/reference
+
+Youtube
+https://developers.google.com/youtube/v3/docs/
+
+
+Uso de las API
+**************
+Podemos usar el API realizando nosotros las peticiones HTTP desde nuestro
+código o utilizar alguna librería que nos dé una capa de mayor abstracción.
+
+Ahora mismo la mayoría de las API necesitan autentificación por ello volveremos
+a esta parte en el siguiente tema.
+
+
+
+
+Arañando la web
+***************************
+Si queremos acceder a información de webs que no proveen un API también podemos
+realizar nuestras consulta y procesar el HTML devuelto. El procesado de HTML
+no es una tarea compleja de realizar de forma manual si se sabe su estructura.
+
+A parte de hacer un procesado manual también podemos utilizar alguna herramienta
+que nos facilite el trabajo.
+
+Objetivo
+Obtener de filmaffinity la información de las películas de estreno.
+https://www.filmaffinity.com/es/cat_new_th_es.html
+
+Título, año, país, sinopsis e imagen
+
+
+Primer paso: (Tanto para manual como para acceso con librería)
+Lo primero que debemos hacer es analizar el HTML que vamos a procesar, en él
+debemos encontrar patrones comunes de la información que queremos procesar.
+
+Listado -> obtener links -> visitar peli -> obtener info
+
+
+.- Manual
+Realizar petición GET HTTP
+http://php.net/manual/es/function.file-get-contents.php
+
+Funcionalidad de XML en php
+# apt install php-xml
+http://php.net/manual/en/book.dom.php
+
+Procesado manual de la información
+
+.- Manual con XPATH
+
+
+.- Librería
+https://goutte.readthedocs.io/en/latest/

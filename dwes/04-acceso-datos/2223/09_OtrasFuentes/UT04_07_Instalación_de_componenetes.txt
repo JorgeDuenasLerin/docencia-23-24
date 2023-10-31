@@ -1,0 +1,82 @@
+Utilización de librerías
+========================
+
+Es común que en nuestro proyecto utilicemos librerías externas que nos den
+determinada funcionalidad como por ejemplo: acceso a API de aplicaciones,
+autentificación, pagos bancarios, geo localización, etc.
+
+La forma manual de incluir estas librerías en nuestro proyecto sería
+descargar el código fuente del proyecto e incluirlo en el nuestro pero...
+¿Qué ocurre si hay una actualización que da más funcionalidad?
+¿Qué ocurre si hay una actualización de seguridad?
+¿Qué ocurre si esa librería depende de otra?
+¿Y esa otra a su vez de otra?
+
+Es común en estas situaciones tener alguna herramienta para gestionar
+este tipo de dependencias. En PHP la herramienta desarrollada se llama
+composer.
+
+NOTA: Cierta relación con Symfony
+
+La gestión de estos paquetes se encarga te ofrecernos un repositorio
+centralizado en el que podemos instalar componentes en nuestro proyecto.
+También se encarga de instalar dependencias y nos permite consultar e
+instalar actualizaciones.
+
+No es una idea original de PHP, generalmente en los ecosistemas web las ideas
+buenas se copian de un proyecto a otro.
+
+python -> pip
+ruby   -> gem
+nodejs -> npm
+java   -> Maven (entre otras cosas)
+
+
+Además de esta gestión de paquetes estas herramientas suelen dar la posibilidad
+de gestionar las dependencias a nivel de proyecto. Esto duplica la cantidad
+de código que externo que tenemos que descargar ya que el proyecto1 puede
+necesitar la librería XYZ y el poyecto2 también.
+¿Por qué tenerlas duplicadas?
+
+Intentamos evitar el infierno de dependencias:
+https://en.wikipedia.org/wiki/Dependency_hell
+
+INVESTIGACIÓN: La primera herramienta que manejó esto de forma eficiente fue
+los virtualenv de python. Si tienes un servidor en producción con varios
+proyectos es una muy buena idea buscar la herramienta equivalente en la
+tecnología que estés utilizando.
+
+
+Instalación de composer
+***********************
+
+Podemos instalar composer fácilmente a través del gestor de paquetes de nuestra
+distribución (apt)
+
+# apt install composer
+
+Es común en este tipo de herramientas que evolucionen rápido y suele haber un
+desfase entre la versión de los repositorios oficiales y la última versión
+de la herramienta.
+
+TAREA:
+Busca la versión de composer actual y busca con "apt search" la versión de los
+repositorios oficiales de Ubuntu.
+
+
+TAREA:
+Instalación desde composer
+https://getcomposer.org/download/
+
+Verificamos que es un script php
+# less composer.phar
+
+Le damos permiso de ejecución
+# chmod 755 composer.phar
+
+Creamos un enlace
+# cp composer.phar /usr/bin/composer
+
+
+Comprobamos su Instalación
+$ composer
