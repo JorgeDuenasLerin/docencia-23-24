@@ -24,5 +24,5 @@ Entrenamiento:
 10. Crea un programa Java que describa las ips que tiene en ordenador en linux
 11. Crea un programa Java que describa las ips que tiene en ordenador en Windows.
 12. Crea un programa en c que reciba un número n y un número m. El programa escribirá todos los números primos de la longitud n, utilizando m procesos.
-13. Crea un programa que reciba por parámetro dos números grande. El programa creará dos procesos hijos. Cada hijo recibirá un número primo y verificará si es primo o no. Cada hijo al finalizar indica en su estado si el número era primo o no y el proceso padre al recoger el estado del hijo cuenta si cada número era primo y escribe el total de números primos.
+13. Crea un programa que reciba por parámetro dos números grandes. El programa creará dos procesos hijos. Cada hijo gestionará un número primo y verificará si es primo o no. Cada hijo al finalizar indica en su estado si el número era primo o no y el proceso padre al recoger el estado del hijo cuenta si era primo o no, el padre escribe el total de números primos.
 
