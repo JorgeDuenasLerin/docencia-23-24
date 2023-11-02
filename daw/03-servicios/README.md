@@ -102,23 +102,9 @@ La imaginación es el único arma en la guerra contra la realidad.
 .
 ```
 
+### Librerias
 
-## Configuración de base datos
+[Composer](https://getcomposer.org/)
+[PHPMailer](https://github.com/PHPMailer/PHPMailer)
 
-Configurar distintos motores y lenguajes para acceder a base de datos.
 
-```
-mariadb
-postgress
-
-php
-python
-```
-
-```
-https://levelup.gitconnected.com/working-with-apache-in-python-a-practical-guide-with-a-flask-app-example-cce141725633
-```
-
-```
-https://medium.com/mlearning-ai/build-your-own-ai-powered-content-generator-with-7-lines-of-python-code-a679e7d5a563
-```
