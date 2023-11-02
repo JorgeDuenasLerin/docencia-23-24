@@ -52,22 +52,6 @@ Deny from foo.example.org
 
 
 
-## Configuración de base datos
-
-Configurar distintos motores y lenguajes para acceder a base de datos.
-
-```
-mariadb
-postgress
-
-php
-python
-```
-
-```
-https://levelup.gitconnected.com/working-with-apache-in-python-a-practical-guide-with-a-flask-app-example-cce141725633
-```
-
 ## Envío de correo
 
 Hablar del protocolo de correo
@@ -93,10 +77,17 @@ Cómo enviar:
 
 ```
 MAIL FROM: <algo@loquesea.es>
+--- ESPERA RESPUESTA DEL SERVER ---
+
 
 RCPT TO: <jorge.duenas@educa.madrid.org>
+--- ESPERA RESPUESTA DEL SERVER ---
+
 
 DATA 
+--- ESPERA RESPUESTA DEL SERVER ---
+
+
 
 From: "Jorge DAW" <jorge@daw.es>
 To: "Alicia" <alicia@maravillas.com>
@@ -109,4 +100,25 @@ Una cosa es el comando y otra el contenido.
 La imaginación es el único arma en la guerra contra la realidad.
 
 .
+```
+
+
+## Configuración de base datos
+
+Configurar distintos motores y lenguajes para acceder a base de datos.
+
+```
+mariadb
+postgress
+
+php
+python
+```
+
+```
+https://levelup.gitconnected.com/working-with-apache-in-python-a-practical-guide-with-a-flask-app-example-cce141725633
+```
+
+```
+https://medium.com/mlearning-ai/build-your-own-ai-powered-content-generator-with-7-lines-of-python-code-a679e7d5a563
 ```
