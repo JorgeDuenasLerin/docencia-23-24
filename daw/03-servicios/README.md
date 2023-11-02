@@ -66,7 +66,6 @@ python
 
 ```
 https://levelup.gitconnected.com/working-with-apache-in-python-a-practical-guide-with-a-flask-app-example-cce141725633
-
 ```
 
 ## Envío de correo
@@ -82,4 +81,32 @@ openssl s_client -connect smtp.educa.madrid.org:587 -crlf -quiet -starttls smtp
 ```
 EHLO
 AUTH LOGIN
+```
+
+Codificado en base 64
+
+```
+echo -ne "usuario" | base64
+```
+
+Cómo enviar:
+
+```
+MAIL FROM: <algo@loquesea.es>
+
+RCPT TO: <jorge.duenas@educa.madrid.org>
+
+DATA 
+
+From: "Jorge DAW" <jorge@daw.es>
+To: "Alicia" <alicia@maravillas.com>
+Subject: Hello Test Mail
+
+Hola!!
+
+Una cosa es el comando y otra el contenido.
+
+La imaginación es el único arma en la guerra contra la realidad.
+
+.
 ```
