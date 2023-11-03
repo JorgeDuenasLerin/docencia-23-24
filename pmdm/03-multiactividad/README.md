@@ -149,6 +149,8 @@ La actividad de análisis analiza el número de letras presentes. OJO: si una le
 
 La actividad principal recibe el valor de los 3 elementos más repetidos y los muestra.
 
+Solución de Facundo -> [enlace](https://github.com/facun107/solucionesPMDM/tree/main/ejercicioAnalizarTexto)
+
 ### 07 Metalsulg selector
 
 Recopilar las imágenes de Metalsulg, 4 jugadores.
