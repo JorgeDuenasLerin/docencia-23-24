@@ -140,6 +140,9 @@ La actividad SiguienteNumero tiene un botón Aceptar que finaliza y devuelve la 
 Al recoger la suma la actividad principal actualizará los valores, n1 será el antiguo n2 y n2 será el resultado de la suma.
 
 El objetivo es ir sacando los números de la serie de Fibonacci.
+Solución Dani:[java](https://github.com/dclamor/SolucionesPMDM/blob/main/Fibonacci/u3a5FibonacciA.java)[layout](https://github.com/dclamor/SolucionesPMDM/blob/7bbeb2745fce748400280d6bd27cb2319a03370d/Fibonacci/u3a5_fibonaccia.xml)
+
+
 
 ### 06 Análisis de letras texto
 
