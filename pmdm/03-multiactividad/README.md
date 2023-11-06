@@ -142,8 +142,6 @@ Al recoger la suma la actividad principal actualizará los valores, n1 será el 
 El objetivo es ir sacando los números de la serie de Fibonacci.
 Solución Dani:[java](https://github.com/dclamor/SolucionesPMDM/blob/main/Fibonacci/u3a5FibonacciA.java)[layout](https://github.com/dclamor/SolucionesPMDM/blob/7bbeb2745fce748400280d6bd27cb2319a03370d/Fibonacci/u3a5_fibonaccia.xml)
 
-
-
 ### 06 Análisis de letras texto
 
 Tendremos una actividad que nos permite introducir un texto largo. Luego tiene un área para mostrar la información y un botón de Analizar. La actividad al pulsar analizar llama a otra actividad.
