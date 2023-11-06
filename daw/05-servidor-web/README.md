@@ -1,4 +1,9 @@
-# 
+# Desplegar aplicaciones
+
+Redmine
+Wordpress
+Moodle
+
 
 
 ## Configuración de base datos
