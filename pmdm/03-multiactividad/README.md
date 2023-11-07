@@ -193,6 +193,36 @@ myObject = (YourClass) getIntent().getSerializableExtra(Blabla.KEY_NAME);
 Crea una página web con 3 botones:
 
 - El primero abrirá un navegador con tu canción favorita.
-- El Segundo marcar el número 666 (The Number of the Beast)
+- El Segundo marcar el número 666 (The Number of the Beast).
 - El Tercero prepara un sms para tu amigo Paco con el mensaje "Te veo hoy a las 6pm".
 - El Cuarto lanzará otro Intent implicito a tu elección.
+
+Otras tareas realizadas:
+
+- Enviar email.
+- Maps a ubicación.
+
+Manifes:
+```
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+        </intent>
+    </queries>
+```
+
+Java
+```
+        bt.setOnClickListener( (View v) -> {
+            Intent intent = new Intent(Intent.ACTION_DIAL);
+            intent.setData(Uri.parse("tel:" + "666666666"));
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(intent);
+            }else{
+                Log.d("DIAL", "NO RESUELVE");
+            }
+
+            String url = "http://www.example.com";
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+        });
+```

@@ -17,12 +17,12 @@
 > Eventos<br>
 > 8h
 
-03-multiactividad
+[03-multiactividad](03-multiactividad/)
 
 > Varias actividades. Comunicación<br>
 > 8h
 
-04-fragments
+[04-fragments](04-fragments/)
 
 > Controles avanzados. Fragments<br>
 > 8h
