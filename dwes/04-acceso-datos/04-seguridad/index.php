@@ -12,13 +12,16 @@ try {
         $p = $_POST['pass'];
 
         $consulta = $db->prepare("SELECT * FROM usuarios WHERE nombre = '$n' and pass = '$p' LIMIT 1");
-        
         $resultado = $consulta->execute();
+
         print_r($consulta);
+
         if($resultado){
             $u = $consulta->fetch();
             if($u != null){
-                print_r($u);
+                $id = $u[0];
+                $user = $u[1];
+                $img = $u[2];
             }         
         } else{
             $u = null;
@@ -40,9 +43,11 @@ try {
     <title>Document</title>
 </head>
 <body>
-    <?php if ($acceso) { ?>
+    <?php if ($u!=null) { ?>
     <h1>Área secreta</h1>
-    <p>balbla</p>
+    <p><?=$id?></p>
+    <p><?=$user?></p>
+    <p><?=$img?></p>
     <?php } else {?>
     <h1>User y password para área</h1>
     <form action="" method="post">
