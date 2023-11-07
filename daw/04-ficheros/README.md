@@ -9,6 +9,11 @@ Autentificación de directorios
 apache2-mpm-itk
 ```
 
+### Ejercicios
+
+1. Configura un nuevo servidor para usarlo con un usuario nuevo.
+2. Configura los anteriores servidores para poder usar esta nueva funcionalidad.
+
 ## Control de acceso
 
 La directiva Require en Apache se utiliza para controlar el acceso a recursos en el servidor. Se puede utilizar dentro de un bloque <Directory>, <Location>, <Files> o .htaccess. Aquí están las diferentes formas en que se puede utilizar la directiva Require junto con sus descripciones:
@@ -30,11 +35,10 @@ Require user john: Permite el acceso solo a los usuarios especificados. Se requi
 
 ## Usuario y contraseña
 
-
 [Tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-apache-on-ubuntu-18-04-es)
 
 
-## Práctica
+### Práctica
 
 1. Crea un virtual host para el usuario paco. Apache se ejecutará con sus credenciales paco:paco. Tendrá un directorio secreto que pedirá usuarios y contraseña.
     1. alicia, pass 1234
@@ -51,8 +55,11 @@ Require user john: Permite el acceso solo a los usuarios especificados. Se requi
 </Location>
 ```
 
-## Avanzado
-[php-fpm](https://guidocutipa.blog.bo/instalacon-configuracion-de-apache-con-php-fpm-con-mariadb-10-5-y-el-nuevo-php-8-0/)
+
+## Rewrite
+
+[https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/conoces-mod-rewrite/](https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/conoces-mod-rewrite/)
+[https://www.josedomingo.org/pledin/2011/10/ejemplos-del-modulo-rewrite-en-apache-2-2/](https://www.josedomingo.org/pledin/2011/10/ejemplos-del-modulo-rewrite-en-apache-2-2/)
 
 
 ## Directivas de Directorios y ficheros
@@ -120,5 +127,6 @@ Timeout:
 
 Define el tiempo de espera en segundos para recibir una solicitud.
 
-## Más...
+## Avanzado
 
+[php-fpm](https://guidocutipa.blog.bo/instalacon-configuracion-de-apache-con-php-fpm-con-mariadb-10-5-y-el-nuevo-php-8-0/)
