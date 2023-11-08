@@ -14,5 +14,5 @@ Qué ver:
 
 Ejercicios:
 
-[Threads](01-threads.md)
-[Concurrent](02-concurrent.md)
+- [Threads](01-threads.md)
+- [Concurrent](02-concurrent.md)
