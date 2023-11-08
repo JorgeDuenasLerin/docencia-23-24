@@ -190,31 +190,31 @@ Basándote en esa canción, crea un Thread que reciba el tipo de animal, la acci
 Crea un programa principal que gestion 3 canciones infantiles de forma concurrente con distintas prioridades (setPriority)
 
 
-*PARAREVISAR*
 
 
-Crea dos hilos y asigna una prioridad alta a uno y una prioridad baja al otro usando el método setPriority. Luego, imprime la prioridad de cada hilo en la consola.
-Dormir un Hilo (Sleep):
 
-Crea un hilo que imprima los números del 1 al 5, haciendo una pausa de un segundo entre cada número usando el método sleep.
-Unir Hilos (Join):
 
-Crea dos hilos donde el primer hilo imprima los números del 1 al 5 y el segundo hilo imprima los números del 6 al 10. Asegúrate de que el segundo hilo comience después de que el primer hilo haya terminado usando el método join.
-Sincronización de Métodos:
+
+## PARAREVISAR
+
+Ideas de enunciado
 
 Crea una clase Counter con un método sincronizado increment que incremente una variable count. Crea dos hilos que incrementen el contador y observa el resultado.
-Sincronización de Bloques:
-
 Modifica la clase Counter anterior para usar un bloque sincronizado en lugar de un método sincronizado.
+
+
+Niño juegan en el paruqe y tienen que recargar los globos de agua en la fuente. Cada niño escribe un símbolo, al entrar en la fuente se escribe ENTRA(sim)-RECARGA-SALE(sim)
+Nunca debe haber más de un niño recargando en la fuente.
+
+
+Dos equipos tirando de la cuerda. 
+
+
+
+
 Comunicación entre Hilos:
 
 Crea dos hilos que se comuniquen entre sí usando los métodos wait y notify, de tal manera que uno imprima los números impares y el otro imprima los números pares del 1 al 10.
 Manejo de Excepciones de Hilos:
 
 Crea un hilo que lance una excepción RuntimeException. Captura y maneja la excepción usando un UncaughtExceptionHandler.
-
-
-Un elefante se balanceaba sobre la tela de una araña
-Como veía que resistía, fue a llamar otro elefante
-Dos elefantes se balanceaban sobre la tela de una araña
-Como veían que resistía, fueron a llamar otro elefante
