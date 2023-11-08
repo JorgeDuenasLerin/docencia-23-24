@@ -23,7 +23,7 @@ try {
 <body>
     <?php if($resultado) { ?>
         <?php foreach($data as $row)  {
-            echo $row['id'] . " - " . $row['nombre'] . " - " . $row['pass'] . " - " . $row['perfil_img'] . "<br>";
+            echo htmlspecialchars($row['id']) . " - " . htmlspecialchars($row['nombre']) . " - " . $row['pass'] . " - " . $row['perfil_img'] . "<br>";
         } ?>
     <?php } else { ?>
         <h1>No se han obtenido resultados</h1>
