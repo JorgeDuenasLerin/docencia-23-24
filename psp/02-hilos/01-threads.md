@@ -4,7 +4,7 @@
 
 Creación de un Hilo:
 
-java
+```java
 class MyThread extends Thread {
     public void run() {
         System.out.println("Hilo ejecutándose");
@@ -16,9 +16,11 @@ public class Main {
         t.start();
     }
 }
+```
+
 Implementación de la interfaz Runnable:
 
-java
+```java
 class MyRunnable implements Runnable {
     public void run() {
         System.out.println("Hilo ejecutándose");
@@ -30,17 +32,22 @@ public class Main {
         t.start();
     }
 }
+```
+
+
 Nombre del Hilo:
 
-java
+```java
 public class Main {
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getName());
     }
 }
+```
+
 Prioridad del Hilo:
 
-java
+```java
 public class Main {
     public static void main(String[] args) {
         Thread t = new Thread();
@@ -48,9 +55,12 @@ public class Main {
         System.out.println(t.getPriority());
     }
 }
+```
+
+
 Dormir un Hilo (Sleep):
 
-java
+```java
 public class Main {
     public static void main(String[] args) {
         try {
@@ -60,9 +70,11 @@ public class Main {
         }
     }
 }
+```
+
 Unir Hilos (Join):
 
-java
+```java
 class MyThread extends Thread {
     public void run() {
         for(int i=0; i<5; i++) {
@@ -88,9 +100,11 @@ public class Main {
         t2.start();
     }
 }
+```
+
 Sincronización de Métodos:
 
-java
+```java
 class Counter {
     synchronized void increment() {
         int count = 0;
@@ -98,9 +112,11 @@ class Counter {
         System.out.println(count);
     }
 }
+```
+
 Sincronización de Bloques:
 
-java
+```java
 class Counter {
     void increment() {
         synchronized (this) {
@@ -110,12 +126,23 @@ class Counter {
         }
     }
 }
+```
+
 Comunicación entre Hilos:
 
-java
-class Chat {
+```java
+class Printer {
+    private static final double DELAY = 100;
     boolean flag = false;
-    synchronized void Question(String msg) {
+
+    private void imprimir(String msg) {
+        for(int i = 0 ; i<msg.length(); i++){
+            System.out.print(msg.charAt(i));
+            Thread.sleep(Math.random()*DELAY);
+        }
+    }
+
+    synchronized void imprime(String msg) {
         if (flag) {
             try {
                 wait();
@@ -123,26 +150,48 @@ class Chat {
                 e.printStackTrace();
             }
         }
-        System.out.println(msg);
+        imprimir(msg);
         flag = true;
         notify();
     }
 }
-
+```
 
 
 ## Ejercicios
 
-Creación de un Hilo:
+### 01 Creación de un Hilo:
 
-Crea una clase que extienda de Thread y sobrescriba el método run para imprimir "Hola Mundo" en la consola. Luego, instancia y ejecuta el hilo en la clase principal.
-Implementación de la interfaz Runnable:
+Hilos:
+- Crea una clase que extienda de Thread y sobrescriba el método run para imprimir "Hola Mundo" en la consola. Luego, instancia y ejecuta el hilo en la clase principal.
+- Crea un versión de forma que implementes Runnable.
+- Crea una versión con un Lambda.
+
+Haz un método princpial que arranque los 3 threads.
+
+
+### 02 Implementación de la interfaz Runnable:
 
 Crea una clase que implemente la interfaz Runnable y sobrescriba el método run para imprimir los números del 1 al 10. Luego, instancia y ejecuta el hilo en la clase principal.
-Nombre del Hilo:
 
-Crea un hilo y asigna un nombre usando el método setName. Luego, imprime el nombre del hilo en la consola usando el método getName.
-Prioridad del Hilo:
+Modifica el programa anterior para que cree un array de N Threads y los espere. A cada thread le dará un nombre (Método setName)
+
+### 03 Los elefantes...
+
+```text
+Un elefante se balanceaba sobre la tela de una araña
+Como veía que resistía, fue a llamar otro elefante
+Dos elefantes se balanceaban sobre la tela de una araña
+Como veían que resistía, fueron a llamar otro elefante
+```
+
+Basándote en esa canción, crea un Thread que reciba el tipo de animal, la acción y el número máximo. Cada vez que escriba una estrofa, el thread generará un número aleatorio entre 100000 y 300000 y verificará si es primo.
+
+Crea un programa principal que gestion 3 canciones infantiles de forma concurrente con distintas prioridades (setPriority)
+
+
+*PARAREVISAR*
+
 
 Crea dos hilos y asigna una prioridad alta a uno y una prioridad baja al otro usando el método setPriority. Luego, imprime la prioridad de cada hilo en la consola.
 Dormir un Hilo (Sleep):
@@ -163,3 +212,9 @@ Crea dos hilos que se comuniquen entre sí usando los métodos wait y notify, de
 Manejo de Excepciones de Hilos:
 
 Crea un hilo que lance una excepción RuntimeException. Captura y maneja la excepción usando un UncaughtExceptionHandler.
+
+
+Un elefante se balanceaba sobre la tela de una araña
+Como veía que resistía, fue a llamar otro elefante
+Dos elefantes se balanceaban sobre la tela de una araña
+Como veían que resistía, fueron a llamar otro elefante
