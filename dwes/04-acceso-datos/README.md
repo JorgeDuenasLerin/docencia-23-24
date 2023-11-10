@@ -51,6 +51,10 @@ GRANT ALL ON nombre_de_base_de_datos.* TO 'nombreusuario'@'localhost';
 
 Modifica la práctica anterior para utilizar persistencia en base de datos
 
+## Subtemas
+
+
+
 
 ## Ejemplos PHP
 
