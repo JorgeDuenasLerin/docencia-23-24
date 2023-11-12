@@ -10,7 +10,7 @@ Descripción: El framework Executor proporciona una forma de gestionar y control
 Uso: Útil cuando se tiene una cantidad conocida de tareas que deben ser ejecutadas en paralelo, y se desea controlar el número de hilos utilizados.
 
 
-java
+```java
 
 import java.util.concurrent.*;
 
@@ -25,6 +25,8 @@ public class ExecutorExample {
     }
 }
 
+```
+
 
 
 
@@ -34,7 +36,7 @@ Clases involucradas: Callable, Future.
 Descripción: Callable es similar a Runnable, pero puede devolver un resultado o lanzar excepciones. Future representa el resultado de un cálculo que aún no ha sido completado.
 Uso: Útil cuando se tienen tareas que deben devolver un resultado y/o lanzar excepciones.
 
-
+```java
 import java.util.concurrent.*;
 
 public class CallableFutureExample {
@@ -48,7 +50,7 @@ public class CallableFutureExample {
         executor.shutdown();
     }
 }
-
+```
 
 BlockingQueue:
 
@@ -57,7 +59,7 @@ Clases involucradas: BlockingQueue, ArrayBlockingQueue.
 Descripción: BlockingQueue es una cola que soporta operaciones de espera cuando se intenta insertar o recuperar elementos.
 Uso: Útil en escenarios de productor-consumidor donde los productores y consumidores deben coordinarse.
 
-
+```java
 import java.util.concurrent.*;
 
 public class BlockingQueueExample {
@@ -67,14 +69,14 @@ public class BlockingQueueExample {
         System.out.println(queue.take());
     }
 }
-
+```
 
 Semaphore:
 Clases involucradas: Semaphore.
 Descripción: Semaphore es utilizado para controlar el acceso a recursos compartidos por múltiples hilos.
 Uso: Útil cuando se tienen recursos limitados y se desea controlar el acceso a ellos, como conexiones a una base de datos.
 
-
+```java
 import java.util.concurrent.*;
 
 public class SemaphoreExample {
@@ -94,7 +96,7 @@ public class SemaphoreExample {
         new Thread(task).start();
     }
 }
-
+```
 
 CountDownLatch:
 
@@ -102,8 +104,7 @@ Clases involucradas: CountDownLatch.
 Descripción: CountDownLatch permite a uno o más hilos esperar hasta que se alcance un conteo específico.
 Uso: Útil en situaciones donde se desea esperar hasta que cierto número de operaciones sean completadas antes de proceder.
 
-java
-Copy code
+```java
 import java.util.concurrent.*;
 
 public class CountDownLatchExample {
@@ -118,7 +119,7 @@ public class CountDownLatchExample {
         new Thread(task).start();
     }
 }
-
+```
 
 CyclicBarrier:
 
@@ -127,7 +128,7 @@ Descripción: CyclicBarrier permite a un grupo de hilos esperar hasta que todos 
 Uso: Útil en situaciones donde varios hilos deben esperar hasta que todos lleguen a un punto específico antes de proceder.
 
 
-java
+```java
 Copy code
 import java.util.concurrent.*;
 
@@ -148,7 +149,7 @@ public class CyclicBarrierExample {
         new Thread(task).start();
     }
 }
-
+```
 
 ScheduledExecutorService:
 
@@ -156,7 +157,7 @@ Clases involucradas: ScheduledExecutorService.
 Descripción: Permite la ejecución de tareas en un horario específico o en intervalos regulares.
 Uso: Útil cuando se tienen tareas que deben ser ejecutadas periódicamente o en un momento específico en el futuro.
 
-java
+```java
 Copy code
 import java.util.concurrent.*;
 
@@ -167,7 +168,7 @@ public class ScheduledExecutorExample {
         executor.scheduleAtFixedRate(task, 0, 2, TimeUnit.SECONDS);
     }
 }
-
+```
 
 ## Ejercicios
 
