@@ -1,18 +1,28 @@
 <?php
 
-$servername = "localhost";
-$username = "tu_usuario";
-$password = "tu_contraseña";
-$dbname = "tu_base_de_datos";
+try {
+    $db = new PDO('mysql:host=localhost;dbname=menosdaw','menosdaw','1234');
+    $consulta = $db->prepare("SELECT * FROM Comida WHERE id = :id ");
+    $consulta->bindParam(":id", $id, PDO::PARAM_INT);
+    $resultado = $consulta->execute();
+    
+    if($resultado){
+        $receta = $consulta->fetch();
+    } else{
+        $receta = null;
+    }
+    
+    //print_r($receta);
 
-// Conexión a la base de datos
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Error de conexión: " . $conn->connect_error);
+}catch(PDOException $e){
+    echo "ERROR:" . $e->getMessage();
+    die();
 }
 
+$directorio = "uploads/";
+
 if(isset($_FILES["imagen_perfil"])){
-    $directorio = "imagenes_perfil/";
+    
     $archivo = $directorio . basename($_FILES["imagen_perfil"]["name"]);
     $nombreArchivo = basename($_FILES["imagen_perfil"]["name"]);
     $formatoImagen = strtolower(pathinfo($archivo, PATHINFO_EXTENSION));
@@ -34,15 +44,23 @@ if(isset($_FILES["imagen_perfil"])){
         $contador++;
     }
 
+    //TODO: Faltan verificaciones de tamaño y tipo.
+
     if ($subir == 1) {
         if (move_uploaded_file($_FILES["imagen_perfil"]["tmp_name"], $archivo)) {
             // Guardar la ruta de la imagen en la base de datos
-            $sql = "INSERT INTO usuarios (perfil_img) VALUES ('$archivo')";
+            // TODO: 
+
+            $sql = "UPDATE usuarios (perfil_img) VALUES (:path_imagen_perfil)";
+            $conn->prepare($sql);
+
+            /*
             if ($conn->query($sql) === TRUE) {
                 echo "La imagen ". basename($_FILES["imagen_perfil"]["name"]). " ha sido subida.";
             } else {
                 echo "Error al guardar la imagen en la base de datos: " . $conn->error;
-            }
+            }*/
+            
         } else {
             echo "Hubo un error al subir tu archivo.";
         }

@@ -1,8 +1,12 @@
 <?php
+echo "<pre>";
+print_r($_FILES);
+echo "</pre>";
+
 define('MAX_SIZE', 500000);
 
 $target_dir = "uploads/";  // Directorio donde se subirán las imágenes.
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]); // uploads/gato.jpg
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
