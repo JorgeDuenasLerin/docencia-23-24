@@ -194,19 +194,19 @@ Basándote en esa canción, crea un Thread que reciba el tipo de animal, la acci
 
 Crea un programa principal que gestion 3 canciones infantiles de forma concurrente con distintas prioridades (setPriority)
 
+### 04 Contador
 
+Crea una clase Counter con un método sincronizado increment que incremente una variable count. Crea dos hilos que incrementen el contador y observa el resultado.
+Modifica la clase Counter anterior para usar un bloque sincronizado en lugar de un método sincronizado.
 
+#### Modificación 04a 
 
-
+Modifica el ejercicio para poder incrementar y decrementar, crea 5 hilos que incrementen 1000 veces y 5 que decrementen 1000 veces. Muestra el resultado de hacer esta operación con sincronización y sin sincornización.
 
 
 ## PARAREVISAR
 
 Ideas de enunciado
-
-Crea una clase Counter con un método sincronizado increment que incremente una variable count. Crea dos hilos que incrementen el contador y observa el resultado.
-Modifica la clase Counter anterior para usar un bloque sincronizado en lugar de un método sincronizado.
-
 
 Niño juegan en el paruqe y tienen que recargar los globos de agua en la fuente. Cada niño escribe un símbolo, al entrar en la fuente se escribe ENTRA(sim)-RECARGA-SALE(sim)
 Nunca debe haber más de un niño recargando en la fuente.
@@ -214,12 +214,10 @@ Nunca debe haber más de un niño recargando en la fuente.
 
 Dos equipos tirando de la cuerda. 
 
-
-
-
 Comunicación entre Hilos:
 
 Crea dos hilos que se comuniquen entre sí usando los métodos wait y notify, de tal manera que uno imprima los números impares y el otro imprima los números pares del 1 al 10.
+
 Manejo de Excepciones de Hilos:
 
 Crea un hilo que lance una excepción RuntimeException. Captura y maneja la excepción usando un UncaughtExceptionHandler.
