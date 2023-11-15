@@ -1,27 +1,34 @@
 # Desplegar aplicaciones
 
-Redmine
+## Wordpress
+
+Explicación práctica de despliegue de Wordpress.
+
+### Tarea
+
 Wordpress
-Moodle
 
+Haz la web de un instituto con alguno de los siguientes temas:
 
+- Academic Education
+- EducaMadrid XVII
+- Fundraiser Lite
+- Gurukul Education
+- Kids Education
+- OnePress
+- SpicePress
+- Sydney
+- Total
 
-## Configuración de base datos
+## Moodle
 
-Configurar distintos motores y lenguajes para acceder a base de datos.
+[Moodle](https://moodle.org/?lang=es)
 
-```
-mariadb
-postgress
+## Redmine
 
-php
-python
-```
+[Redmine](https://www.redmine.org/)
 
-```
-https://levelup.gitconnected.com/working-with-apache-in-python-a-practical-guide-with-a-flask-app-example-cce141725633
-```
+## Preguntas/Respuestas
 
-```
-https://medium.com/mlearning-ai/build-your-own-ai-powered-content-generator-with-7-lines-of-python-code-a679e7d5a563
-```
+https://github.com/ialbert/biostar-central
+[Ejemplo](https://www.biostars.org/)

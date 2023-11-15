@@ -79,3 +79,8 @@ Gitflow. [enlace](https://danielkummer.github.io/git-flow-cheatsheet/)
 ## mkdocs
 
 [documentación oficial](https://www.mkdocs.org/)
+
+## markdown
+
+[cheatsheet 1](./markdown-cheatsheet.pdf)
+[cheatsheet 2](./markdown-cheatsheet_alt.pdf)
