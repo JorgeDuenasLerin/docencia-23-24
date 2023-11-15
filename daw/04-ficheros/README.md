@@ -55,7 +55,6 @@ Require user john: Permite el acceso solo a los usuarios especificados. Se requi
 </Location>
 ```
 
-
 ## Rewrite
 
 [https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/conoces-mod-rewrite/](https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/conoces-mod-rewrite/)

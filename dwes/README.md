@@ -47,6 +47,16 @@
 > Aplicaciones web híbridas<br>
 > 15 horas
 
+## Examen evaluación 1
+
+Contenidos:
+
+- Objetos, todo lo relacionado. Autoload
+- Bases de datos. CRUD, Ordenación, paginación, consultas preparadas
+- Formularios. Todo tipos de campos y validaciones. Campos opcionales
+- Ficheros. Codificación json serialización
+- Integración HTML-PHP
+
 ## Temporalización
 
 |     	| s1 	| s2 	| s3 	| s4 	| s5 	|
