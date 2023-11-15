@@ -32,7 +32,6 @@ Require user:
 
 Require user john: Permite el acceso solo a los usuarios especificados. Se requiere configurar la autenticación.
 
-
 ## Usuario y contraseña
 
 [Tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-apache-on-ubuntu-18-04-es)
@@ -59,6 +58,13 @@ Require user john: Permite el acceso solo a los usuarios especificados. Se requi
 
 [https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/conoces-mod-rewrite/](https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/conoces-mod-rewrite/)
 [https://www.josedomingo.org/pledin/2011/10/ejemplos-del-modulo-rewrite-en-apache-2-2/](https://www.josedomingo.org/pledin/2011/10/ejemplos-del-modulo-rewrite-en-apache-2-2/)
+
+
+## Certificados
+
+Cosas de certificados:
+- Autofirmados
+- Certbot
 
 
 ## Directivas de Directorios y ficheros
