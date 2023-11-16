@@ -18,24 +18,40 @@ apache2-mpm-itk
 
 La directiva Require en Apache se utiliza para controlar el acceso a recursos en el servidor. Se puede utilizar dentro de un bloque <Directory>, <Location>, <Files> o .htaccess. Aquí están las diferentes formas en que se puede utilizar la directiva Require junto con sus descripciones:
 
-Require all:
-
-Require all granted: Permite el acceso a todos sin restricciones.
-Require all denied: Niega el acceso a todos sin excepción.
-Require ip:
-
-Require ip 192.168.1.0/24: Permite el acceso solo desde las direcciones IP en la subred especificada.
-Require host:
-
-Require host example.com: Permite el acceso solo desde los hosts especificados.
-Require user:
-
-Require user john: Permite el acceso solo a los usuarios especificados. Se requiere configurar la autenticación.
+- Require all:
+    - Require all granted: Permite el acceso a todos sin restricciones.
+    - Require all denied: Niega el acceso a todos sin excepción.
+- Require ip:
+    - Require ip 192.168.1.0/24: Permite el acceso solo desde las direcciones IP en la subred especificada.
+- Require host:
+    - Require host example.com: Permite el acceso solo desde los hosts especificados.
+- Require user:
+    - Require user john: Permite el acceso solo a los usuarios especificados. Se requiere configurar la autenticación.
 
 ## Usuario y contraseña
 
 [Tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-apache-on-ubuntu-18-04-es)
 
+```
+# Primera vez
+htpasswd -c /etc/apache2/.htpasswd jorge
+htpasswd /etc/apache2/.htpasswd amparo
+```
+
+Mostrar el contenido:
+```
+cat /etc/apache2/.htpasswd
+```
+
+En la sección a proteger:
+```
+  <Directory "/var/www/html">
+      AuthType Basic
+      AuthName "Restricted Content"
+      AuthUserFile /etc/apache2/.htpasswd
+      Require valid-user
+  </Directory>
+```
 
 ### Práctica
 
@@ -50,15 +66,20 @@ Require user john: Permite el acceso solo a los usuarios especificados. Se requi
 ```
 <Location "/server-status">
     SetHandler server-status
-    Require host example.com
+    Require all granted
 </Location>
 ```
 
 ## Rewrite
 
-[https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/conoces-mod-rewrite/](https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/conoces-mod-rewrite/)
-[https://www.josedomingo.org/pledin/2011/10/ejemplos-del-modulo-rewrite-en-apache-2-2/](https://www.josedomingo.org/pledin/2011/10/ejemplos-del-modulo-rewrite-en-apache-2-2/)
+URLS:
+- [https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/conoces-mod-rewrite/](https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/conoces-mod-rewrite/)
+- [https://www.josedomingo.org/pledin/2011/10/ejemplos-del-modulo-rewrite-en-apache-2-2/](https://www.josedomingo.org/pledin/2011/10/ejemplos-del-modulo-rewrite-en-apache-2-2/)
 
+
+### Práctica
+
+Crea un virtual host.
 
 ## Certificados
 
