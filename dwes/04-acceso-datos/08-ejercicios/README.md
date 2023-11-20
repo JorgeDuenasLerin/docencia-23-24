@@ -73,9 +73,12 @@ Tablas:
 Subtareas:
 
 - Contar el número total de votaciones positivas y negativas para una película específica.
-- Listar las películas con más votaciones positivas.
+- Listar las películas con más votaciones positivas, supongamos que 10.
 - Insertar una nueva votación de un usuario a una película.
 
 Subtarea especial:
 
-- Listado con estadística.
+- Listado con estadística:
+    - [Explicación](https://www.evanmiller.org/how-not-to-sort-by-average-rating.html)
+    - ![La Fórmula](https://www.evanmiller.org/images/average-rating/equation.png)
+    - [La versión fácil](https://stackoverflow.com/a/21288319)
