@@ -1,6 +1,6 @@
 # Ejercicios
 
-Por cada ejercicio haz un enlace o un formulario que envíe la información necesaria. En estos formulario no es necesario validar datos
+Por cada ejercicio haz un enlace o un formulario que envíe la información necesaria. En estos formularios no es necesario validar datos
 
 ## Ejercicio 1: Base de Datos de una Librería
 
@@ -41,10 +41,9 @@ Tablas:
 
 Subtareas:
 
-- Listar todas las canciones de un género específico.
+- Listar todas las canciones de un usuario específico.
 - Insertar un nuevo usuario con sus detalles en la tabla Usuarios.
-- Actualizar la duración de una canción específica.
-
+- Subir una nueva canción.
 
 ## Ejercicio 4: Base de Datos de Empleados de una Empresa
 
