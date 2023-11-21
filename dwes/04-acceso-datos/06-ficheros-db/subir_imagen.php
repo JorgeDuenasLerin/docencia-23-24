@@ -9,7 +9,8 @@
 
 <form action="procesar_subida.php" method="post" enctype="multipart/form-data">
     Selecciona una imagen de perfil:
-    <input type="file" name="imagen_perfil" id="imagen_perfil">
+    <input type="text" name="name" id="name"><br>
+    <input type="file" name="imagen_perfil" id="imagen_perfil"><br>
     <input type="submit" value="Subir Imagen" name="submit">
 </form>
 

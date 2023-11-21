@@ -2,18 +2,6 @@
 
 try {
     $db = new PDO('mysql:host=localhost;dbname=menosdaw','menosdaw','1234');
-    $consulta = $db->prepare("SELECT * FROM Comida WHERE id = :id ");
-    $consulta->bindParam(":id", $id, PDO::PARAM_INT);
-    $resultado = $consulta->execute();
-    
-    if($resultado){
-        $receta = $consulta->fetch();
-    } else{
-        $receta = null;
-    }
-    
-    //print_r($receta);
-
 }catch(PDOException $e){
     echo "ERROR:" . $e->getMessage();
     die();
