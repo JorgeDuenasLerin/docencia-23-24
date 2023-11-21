@@ -20,6 +20,13 @@ Haz la web de un instituto con alguno de los siguientes temas:
 - Sydney
 - Total
 
+
+## Entorno desarrollo
+
+Hablar de los entornos:
+
+Dev, Dev, Test, QA, Prod,
+
 ## Moodle
 
 [Moodle](https://moodle.org/?lang=es)
