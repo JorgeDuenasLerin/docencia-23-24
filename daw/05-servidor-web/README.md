@@ -20,6 +20,28 @@ Haz la web de un instituto con alguno de los siguientes temas:
 - Sydney
 - Total
 
+### Backups
+
+¿Qué es una web?
+
+Sus ficheros y su base de datos.
+
+```
+mysqldump -u <usr> -p <db> > fichero_backup.sql
+```
+
+Con tiempo
+```
+database_name-$(date +%Y%m%d).sql
+```
+
+Fichero
+
+```
+tar xvzf tarr.tar.gz cosa1 cosa2 cosa3 ...
+```
+
+> NOTA: Los '...' puntos indican que puede hacer más cosas.
 
 ## Entorno desarrollo
 
