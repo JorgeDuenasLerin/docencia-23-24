@@ -12,6 +12,12 @@ Procesa la siguiente página y obtén el listado de noticias de portada:
 
 - [Meneame] (https://www.meneame.net/)
 
+## XPATH (Repaso)
+
+Repaso de conceptos:
+- [Chuleta](https://devhints.io/xpath)
+- [La cena](https://topswagcode.com/xpath/)
+
 ## Introduce en la base de datos todas las setas
 
 https://www.fungipedia.org/hongos.html
