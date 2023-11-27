@@ -61,9 +61,14 @@ Subaprtados
 - [Ejercicios]()
 
 
+## Ejemplos de consultas
+
+[SQL](https://www.sqltutorial.org/sql-cheat-sheet/)
+
 ## Ejemplos PHP
 
 SACADO DE: [https://write.corbpie.com/php-pdo-mysql-cheat-sheet/](https://write.corbpie.com/php-pdo-mysql-cheat-sheet/)
+
 
 ```
 <?php
