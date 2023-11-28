@@ -56,6 +56,9 @@ Formato d entrega:
 
 Todos los ejercicios entregados, todo el código entregado, todas las aplicaciones desplegadas tienen que funcionar correctamente. Si un alumno/a no consigue hacer funcionar su propio código o entrega soluciones con errores de compilación el ejercicio será corregido con una calificación de **0 puntos**.
 
+### Puntos en ejercicio
+
+En la medida de los posible se harán ejercicios independientes, de tal forma que el bloqueo en un ejercicio no impida la realización de otro pero los puntos dentro de un mismo ejercicio están relacionados. Es decir, si el ejercicio pide intercambiar información entre páginas o actividades y al final mostrar un resultado, el hecho de mostrar un resultado no dará puntos si no se han conseguido los puntos anteriores.
 
 ### Recursos
 
