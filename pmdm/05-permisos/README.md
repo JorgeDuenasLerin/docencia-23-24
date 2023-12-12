@@ -51,16 +51,6 @@ public class ut03Permisos extends AppCompatActivity {
                 PackageManager.PERMISSION_GRANTED) {
             // You can use the API that requires the permission.
             llamar();
-        } else if (false) {
-            // In an educational UI, explain to the user why your app requires this
-            // permission for a specific feature to behave as expected, and what
-            // features are disabled if it's declined. In this UI, include a
-            // "cancel" or "no thanks" button that lets the user continue
-            // using your app without granting the permission.
-
-            // Mostrar UI Dialog para explicar al usuarios la necesidad del permiso
-            // Vamos a usar la de por defecto de Android. Se ejecuta en el else
-
         } else {
             // You can directly ask for the permission.
             // The registered ActivityResultCallback gets the result of this request.
