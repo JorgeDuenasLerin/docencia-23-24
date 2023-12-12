@@ -27,12 +27,12 @@
 > Controles avanzados. Fragments<br>
 > 8h
 
-05-permisos
+[05-permisos](05-permisos/)
 
 > Permisos de aplicación<br>
 > 8h
 
-06-listas
+[06-listas](06-listas/)
 
 > List view, eventos<br>
 > 8h
