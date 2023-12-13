@@ -19,10 +19,13 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 
 public class UDPServer {
+    private static final int MAX_LENGTH = 65535;
+    private static final int PORT       = 9876;
+
     public static void main(String[] args) {
         try {
-            DatagramSocket socket = new DatagramSocket(9876); // Abre el socket en el puerto 9876
-            byte[] receivedData = new byte[1024];
+            DatagramSocket socket = new DatagramSocket(PORT); // Abre el socket en el puerto 9876
+            byte[] receivedData = new byte[MAX_LENGTH];
 
             while(true) {
                 DatagramPacket receivedPacket = new DatagramPacket(receivedData, receivedData.length);
@@ -45,11 +48,13 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 
 public class UDPClient {
+    private static final int MAX_LENGTH = 65535;
+
     public static void main(String[] args) {
         try {
             DatagramSocket socket = new DatagramSocket();
-            InetAddress IPAddress = InetAddress.getByName("localhost"); // Dirección del servidor
-            byte[] sendData = new byte[1024];
+            InetAddress ipAddress = InetAddress.getByName("localhost"); // Dirección del servidor
+            byte[] sendData = new byte[MAX_LENGTH];
             String sentence = "Hola desde el cliente"; // Mensaje a enviar
             sendData = sentence.getBytes();
 
