@@ -53,11 +53,15 @@ Dev, Dev, Test, QA, Prod,
 
 [Moodle](https://moodle.org/?lang=es)
 
-## Redmine
+## Ampliaciones interesantes
+
+### Redmine
+
+Web para la organización.
 
 [Redmine](https://www.redmine.org/)
 
-## Preguntas/Respuestas
+### Preguntas/Respuestas
 
-https://github.com/ialbert/biostar-central
+[Ejmeplo proyecto](https://github.com/ialbert/biostar-central)
 [Ejemplo](https://www.biostars.org/)
