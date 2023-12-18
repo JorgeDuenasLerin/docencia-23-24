@@ -41,11 +41,15 @@ Tarea 4: Chat UDP (envío-recepción alternativo)
 - Tanto el cliente como el servidor reciben como parámetro el puerto. El cliente también recibirá como parámetro la dirección ip.
 - Ambos programas muestran un prompt al usuario para pedir y mostrar los mensajes enviados.
 
-Tarea 5: Chat UDP (Multithread)
+Tarea 5: Chat UDP (Multithread. Que molesta e interrumpe)
 
 Implementa el chat UDP con la posibilidad de recepción multiple (Utiliza threads)
 
-Tarea 6: Ascensores
+Tarea 6: Chat UDP (Multithread.)
+
+Si el usuario está escribiendo guarda los mensajes hasta que borre lo que está escribiendo o pulse enter.
+
+Tarea 7: Ascensores
 
 Estás desarrollando el software de control de unos ascensores para la conserjería. Los ascensores emiten cada 100 milisegundos una trama de control con el siguiente formato:
 
