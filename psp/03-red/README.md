@@ -29,13 +29,13 @@ Tarea 2: Eco
 - Esta vez el servidor se ejecutará con un bucle while true. Será un servicio de eco, envía al cliente la información que se le ha mandado.
 - El cliente envía información, y espera una respuesta en el mismo puerto.
 
-Tarea 3: Servicio Stringreverse
+Tarea 3: Servicio StringReverse
 
 - Implementa un servicio que devuelva la cadena recibida pero dada la vuelta
 
 Tarea 4: Chat UDP (envío-recepción alternativo)
 
-- Implmenta un chat cliente-servidor, estos programas serán monothread.
+- Implementa un chat cliente-servidor, estos programas serán monothread.
 - Para facilitar la tarea primero envía el cliente, y espera respuesta.
 - Para facilitar la tarea primero espera respuesta el servidor, y luego envía respuesta.
 - Tanto el cliente como el servidor reciben como parámetro el puerto. El cliente también recibirá como parámetro la dirección ip.
@@ -45,11 +45,28 @@ Tarea 5: Chat UDP (Multithread)
 
 Implementa el chat UDP con la posibilidad de recepción multiple (Utiliza threads)
 
+Tarea 6: Ascensores
+
+Estás desarrollando el software de control de unos ascensores para la conserjería. Los ascensores emiten cada 100 milisegundos una trama de control con el siguiente formato:
+
+```
+COD_ASCENSOR;PISO;DIRECCIÓN
+```
+
+Código de ascensor es un valor numérico 01,02,03,etc.
+Piso es una cadena: -1,-2, PB, 01, 02, etc.
+Dirección puede ser U o D, Up or Down, es solo un carácter.
+
+Tienes que hacer un programa simulador que recibe por parámetro el número de ascensor que representa el simulador y la dirección ip del software de control. Este simulador permite al usuario moverse entre plantas. El ascensor tarda 1 segundo en moverse entre plantas.
+
+Debes programar un programa con interfaz gráfico para visualizar el estado de los ascensores, mostrar el número de ascensor, el piso donde está y si va hacía arriba. Este no deberá ser multithread, puede diferenciar en la trama de que ascensor se trata. Deberá mostrar en el interfaz gráfico el estado de 4 ascensores.
+
+
 ## Ideas Futuras
 
 Comunicación multicast.
 Juego de adivina el número.
-Juego del ahoracado.
-Implmenta un servidor de reproducción de MP3 (con TCP). Versión listado de canciones en el server.
-Implmenta un servidor de reproducción de MP3 (con TCP). Versión envío de canción por red.
+Juego del ahorcado.
+Implementa un servidor de reproducción de MP3 (con TCP). Versión listado de canciones en el server.
+Implementa un servidor de reproducción de MP3 (con TCP). Versión envío de canción por red.
 
