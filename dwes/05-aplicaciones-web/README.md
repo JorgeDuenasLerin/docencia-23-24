@@ -21,6 +21,7 @@ OAuth:
 
 - [¿Cuál uso?](https://auth0.com/docs/get-started/authentication-and-authorization-flow/which-oauth-2-0-flow-should-i-use)
 - [Explicación](https://programacionymas.com/blog/protocolo-oauth-2)
+- [Explicación DigitalOcean](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
 - [Ejemplo google](https://usefulangle.com/post/9/google-login-api-with-php-curl)
 
 

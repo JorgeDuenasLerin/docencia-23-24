@@ -70,6 +70,11 @@ En la sección a proteger:
 </Location>
 ```
 
+## Cron y crontab
+
+[Explicación](https://www.redeszone.net/tutoriales/servidores/cron-crontab-linux-programar-tareas/)
+
+
 ## Rewrite
 
 URLS:
