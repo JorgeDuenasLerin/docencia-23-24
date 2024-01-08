@@ -31,3 +31,11 @@ Enlaces:
 
 - [https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow](https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow)
 - [Librería](https://github.com/thephpleague/oauth2-client)
+
+
+### JWT
+
+JSON Web Token. Ver antes en despliegue temas de cifrado.
+
+[Explicación detallada](https://www.youtube.com/watch?v=qXJ9jV-0wQ4)
+[Librería](https://github.com/firebase/php-jwt)
