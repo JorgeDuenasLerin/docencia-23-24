@@ -5,9 +5,11 @@ Patrón de diseño:
 - [MVC](https://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador)
 - [MVC](https://www.geeksforgeeks.org/mvc-framework-introduction/)
 
+
 ## Lenguaje python
 
 [Curso referencia](https://aprendepython.es/)
+[Cheatsheet](https://quickref.me/python.html)
 
 ## Django
 
