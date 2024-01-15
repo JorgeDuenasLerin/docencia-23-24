@@ -26,3 +26,17 @@ Entrenamiento:
 12. Crea un programa en c que reciba un número n y un número m. El programa escribirá todos los números primos de la longitud n, utilizando m procesos.
 13. Crea un programa que reciba por parámetro dos números grandes. El programa creará dos procesos hijos. Cada hijo gestionará un número primo y verificará si es primo o no. Cada hijo al finalizar indica en su estado si el número era primo o no y el proceso padre al recoger el estado del hijo cuenta si era primo o no, el padre escribe el total de números primos.
 
+## Ejercicios de promociones anteriores.
+
+### Con cariño de la promo DAM 2023-2024
+
+Crea un programa de adivina el número con las siguientes características:
+
+- El programa padre creará un proceso hijo. El cual será el que controle el número aleatorio.
+- El proceso hijo generará un número aleatorio.
+- El proceso hijo recibirá por un pipe números.
+- El proceso hijo emitirá una SIGUSR1, SIGUSR2, SIGINT al proceso padre ```getppid```. Cuando el número sea mayor emitirá SIGUSR1, si es menor SIGUSR2 y si es el número SIGINT.
+- El proceso hijo termina cuando recibe SIGINT.
+- El programa padre pedirá números al usuario y los enviará por el pipe al hijo.
+- Cuando el programa padre reciba la señal SIGINT será que el usuario ha acertado, mostrará un mensaje. Después el padre emitirá otra SIGINT al hijo para que finalice.
+
