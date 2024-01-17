@@ -1,5 +1,11 @@
 # Tomcat
 
+## Pero antes
+
+[NGINX](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-22-04)
+
+## Tomcat
+
 Usando Tomcat... aquella vez que impartí el módulo de IAW de ASIR.
 
 [Vídeo explicativo](https://www.youtube.com/watch?v=YmPy6CYLn14)
@@ -25,7 +31,6 @@ https://documentation.opencms.org/opencms-documentation/server-administration/to
 ## Java web
 
 Más sabores que en el ```Dunkin donuts```, más división que la izquierda. Aunque no está tan mal como el mundo de ```javascript```.
-
 
 ### Copiado de GPT - Falta verificación.
 

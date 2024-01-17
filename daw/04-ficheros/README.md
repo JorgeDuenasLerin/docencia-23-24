@@ -78,9 +78,13 @@ En la sección a proteger:
 ## Rewrite
 
 URLS:
+
 - [https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/conoces-mod-rewrite/](https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/conoces-mod-rewrite/)
 - [https://www.josedomingo.org/pledin/2011/10/ejemplos-del-modulo-rewrite-en-apache-2-2/](https://www.josedomingo.org/pledin/2011/10/ejemplos-del-modulo-rewrite-en-apache-2-2/)
 
+Chuleta:
+
+- [https://mod-rewrite-cheatsheet.com/](https://mod-rewrite-cheatsheet.com/)
 
 ### Práctica
 
