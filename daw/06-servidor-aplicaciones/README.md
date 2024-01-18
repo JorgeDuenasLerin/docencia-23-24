@@ -1,8 +1,12 @@
-# Tomcat
+# Otros servidores y Tomcat
 
-## Pero antes
+## El otro gran jugador
 
 [NGINX](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-22-04)
+
+También se puede usar php-fpm, una forma más rápida de procesar php con Apache.
+
+[php-fpm](https://guidocutipa.blog.bo/instalacon-configuracion-de-apache-con-php-fpm-con-mariadb-10-5-y-el-nuevo-php-8-0/)
 
 ## Tomcat
 
