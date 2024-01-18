@@ -65,6 +65,18 @@ Tienes que hacer un programa simulador que recibe por parámetro el número de a
 
 Debes programar un programa con interfaz gráfico para visualizar el estado de los ascensores, mostrar el número de ascensor, el piso donde está y si va hacía arriba. Este no deberá ser multithread, puede diferenciar en la trama de que ascensor se trata. Deberá mostrar en el interfaz gráfico el estado de 4 ascensores.
 
+### Mini Proyecto
+
+Chat cliente servidor UDP. Ver archivo con esquema:
+
+![Chat UDP](Chats.png)
+
+
+
+## TCP
+
+Pronto nuevos protocolos....
+
 
 ## Ideas Futuras
 

@@ -78,13 +78,25 @@ En la sección a proteger:
 ## Rewrite
 
 URLS:
+
 - [https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/conoces-mod-rewrite/](https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/conoces-mod-rewrite/)
 - [https://www.josedomingo.org/pledin/2011/10/ejemplos-del-modulo-rewrite-en-apache-2-2/](https://www.josedomingo.org/pledin/2011/10/ejemplos-del-modulo-rewrite-en-apache-2-2/)
 
+Chuleta:
+
+- [https://mod-rewrite-cheatsheet.com/](https://mod-rewrite-cheatsheet.com/)
 
 ### Práctica
 
-Crea un virtual host.
+Crea un virtual host para:
+
+- Una web con este esquema "/rewrite/-cadena-/-cadena-/" sea procesado por una página index.php que reciba dos parámetros y escriba el primero como un h1 y el segundo como un p
+- 
+
+Bonus generación de información:
+
+- [Faker](https://faker.readthedocs.io/en/master/index.html)
+- [Pandas a SQL](https://stackoverflow.com/a/51629081)
 
 ## Certificados
 
@@ -125,7 +137,3 @@ Listado de directivas:
 - Listen: Define el puerto en el que Apache escuchará las solicitudes.
 - LoadModule: Carga módulos dinámicos.
 - Timeout: Define el tiempo de espera en segundos para recibir una solicitud.
-
-## Avanzado
-
-[php-fpm](https://guidocutipa.blog.bo/instalacon-configuracion-de-apache-con-php-fpm-con-mariadb-10-5-y-el-nuevo-php-8-0/)
