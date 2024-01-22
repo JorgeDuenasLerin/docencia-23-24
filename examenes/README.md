@@ -70,6 +70,11 @@ En caso de copia, intento, o acceso a documentación no permitida, conllevará u
 
 Para poder puntuar en algún ejercicio, será requisito indispensable que compile y ejecute sin ningún
 
+### Uso de IA
+
+Está prohibido el uso de cualquier herramienta generadora de código.
+
+Los exámenes deberán ser grabados con OBS y custodiados por el alumno.
 
 ### Buenas prácticas
 
