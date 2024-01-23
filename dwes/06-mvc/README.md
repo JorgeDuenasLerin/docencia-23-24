@@ -11,6 +11,16 @@ Patrón de diseño:
 [Curso referencia](https://aprendepython.es/)
 [Cheatsheet](https://quickref.me/python.html)
 
+### Mini ejercicios de python
+
+Atributos: Define una clase Libro en Python y agrega atributos para titulo, autor y año. Luego, crea una instancia de esta clase y accede a sus atributos para imprimirlos.
+
+Acceso directo: Crea una clase Círculo con un atributo radio. Luego, crea una instancia de esta clase, cambia el valor del radio directamente utilizando el acceso directo, e imprime el nuevo valor del radio.
+
+Propiedades: Define una clase Persona con un atributo privado edad y utiliza el decorador @property para crear un getter y un setter para edad, incluyendo una validación que impida asignar valores negativos a edad. Imprimirá un mensaje de error.
+
+Valores calculados: Define una clase Rectángulo con atributos largo y ancho. Añade un método area que calcule el área del rectángulo (largo * ancho) y otro método perímetro que calcule el perímetro (2 * largo + 2 * ancho). Crea una instancia de esta clase y utiliza estos métodos para imprimir el área y el perímetro del rectángulo.
+
 ## Django
 
 [Tutorial Oficial](https://www.djangoproject.com/)
