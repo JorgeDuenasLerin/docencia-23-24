@@ -13,6 +13,8 @@ Patrón de diseño:
 
 ### Mini ejercicios de python
 
+#### Propiedades y atributos
+
 Atributos: Define una clase Libro en Python y agrega atributos para titulo, autor y año. Luego, crea una instancia de esta clase y accede a sus atributos para imprimirlos.
 
 Acceso directo: Crea una clase Círculo con un atributo radio. Luego, crea una instancia de esta clase, cambia el valor del radio directamente utilizando el acceso directo, e imprime el nuevo valor del radio.
@@ -20,6 +22,18 @@ Acceso directo: Crea una clase Círculo con un atributo radio. Luego, crea una i
 Propiedades: Define una clase Persona con un atributo privado edad y utiliza el decorador @property para crear un getter y un setter para edad, incluyendo una validación que impida asignar valores negativos a edad. Imprimirá un mensaje de error.
 
 Valores calculados: Define una clase Rectángulo con atributos largo y ancho. Añade un método area que calcule el área del rectángulo (largo * ancho) y otro método perímetro que calcule el perímetro (2 * largo + 2 * ancho). Crea una instancia de esta clase y utiliza estos métodos para imprimir el área y el perímetro del rectángulo.
+
+#### Métodos (Ejercicios por revisar)
+
+Métodos: Define una clase Animal con un método hacer_sonido. Este método debe imprimir "Este animal no hace un sonido" por defecto. Luego, crea una subclase Perro que sobrescriba el método hacer_sonido para imprimir "Guau".
+
+Métodos de instancia: Crea una clase Contador que tenga un atributo valor. Añade dos métodos de instancia: incrementar, que aumenta el valor en 1, y mostrar_valor, que imprime el valor actual del contador. Crea una instancia de Contador, utiliza el método incrementar varias veces y luego el método mostrar_valor para mostrar el resultado.
+
+Métodos de clase: Diseña una clase Empleado con un atributo de clase cantidad_empleados que rastree el número total de instancias de empleado creadas. Añade un método de clase actualizar_cantidad_empleados que incremente cantidad_empleados por uno cada vez que se crea una nueva instancia. Asegúrate de que este método se llame dentro del constructor (__init__). Luego, crea algunas instancias de Empleado y utiliza un método de clase obtener_cantidad_empleados para imprimir el número total de empleados.
+
+Métodos estáticos: Implementa una clase Calculadora que tenga un método estático sumar que acepte dos números y devuelva su suma. Asegúrate de que este método pueda ser llamado sin necesidad de crear una instancia de la clase. Ejemplifica su uso llamando al método estático Calculadora.sumar(5, 3).
+
+Métodos mágicos: Crea una clase Libro con atributos titulo y autor. Implementa el método mágico __str__ para que cuando se imprima una instancia de Libro, se muestre un string en el formato "Titulo: [titulo], Autor: [autor]". Además, implementa el método mágico __eq__ para comparar dos instancias de Libro basándose en si tienen el mismo titulo y autor.
 
 ## Django
 
