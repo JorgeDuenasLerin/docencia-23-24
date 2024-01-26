@@ -37,6 +37,8 @@ Métodos mágicos: Crea una clase Libro con atributos titulo y autor. Implementa
 
 ## Django
 
+Preparando el entorno: [Virtualenvs](https://virtualenvwrapper.readthedocs.io/en/latest/#)
+
 [Tutorial Oficial](https://www.djangoproject.com/)
 
 ## Ejercicios python
