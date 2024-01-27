@@ -41,6 +41,10 @@ Preparando el entorno: [Virtualenvs](https://virtualenvwrapper.readthedocs.io/en
 
 [Tutorial Oficial](https://www.djangoproject.com/)
 
+### Mejoras
+
+Para admin [https://github.com/originalankur/awesome-django-admin](https://github.com/originalankur/awesome-django-admin)
+
 ## Ejercicios python
 
 Ejercicios para introducirnos en el lenguaje.
