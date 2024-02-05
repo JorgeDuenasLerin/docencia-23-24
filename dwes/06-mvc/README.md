@@ -41,6 +41,8 @@ Preparando el entorno: [Virtualenvs](https://virtualenvwrapper.readthedocs.io/en
 
 [Tutorial Oficial](https://www.djangoproject.com/)
 
+[Ficheros](https://docs.djangoproject.com/es/5.0/topics/files/)
+
 ### Mejoras
 
 Para admin [https://github.com/originalankur/awesome-django-admin](https://github.com/originalankur/awesome-django-admin)
@@ -48,23 +50,18 @@ Para admin [https://github.com/originalankur/awesome-django-admin](https://githu
 Listados y ranking... [Rank](https://djangopackages.org/)
 
 
-## Ejercicios
-
-1. Crea una página con y una relación 1:n entre las entidades, produce un listado usando funciones de cadenas.
-2. Crea una página con productos y etiquetas. Utiliza el sistema de templates.
-3. Crea un sitio de noticias con paginación.
-4. Crea un sitio en el que se permita tener un formulario con sugerencias.
-5. Crea un twitter (Solo post sin comentarios, los post no tienen imágenes)
-
-## Ejercicios python
-
-
 ### Ejercicios
 
-Crea una página con resultados de partidos. Debes crear la entidad Equipo también.
+1. Crea una página con resultados de partidos. Debes crear la entidad Equipo también.
 
-Crea una página con un formulario de sugerencia: título, email y descripción.
+2. Crea una página con un formulario de sugerencia: título, email y descripción.
 
-Crea una página con un listado y detalle de frutas y verduras usan vistas genéricas.
+3. Crea una página con un listado y detalle de frutas y verduras usan vistas genéricas.
 
-Crea un aplicación con un carrusel de fotos administrada desde el admin. Habrá 5 fotos con descripción.
+4. Crea un aplicación con un carrusel de fotos administrada desde el admin. Habrá 5 fotos con descripción.
+
+
+### Más Ejercicios
+
+x. Crea un sitio de noticias con paginación. (Ver paginación)
+x. Crea un twitter (Solo post sin comentarios, los post no tienen imágenes) (Ver autentificación)
