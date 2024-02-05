@@ -117,6 +117,19 @@ java cliente ""
 
 ## UDP Multicast
 
+> Recuerda: No es necesario configurar la IP a nivel sistema operativo.
+
+Ver ejemplos en código y hacerlos funcionar.
+
+[módulo](https://github.com/JorgeDuenasLerin/programacion-de-servicios-y-procesos/tree/main/ut03).
+
+### Ejercicios
+
+Unicast: Programa que recibe números y contesta Sí o No indicando si son primos.
+Unicast: Programa que envía números.
+Broadcast: Programa que manda por Broadcast la cadena "editor"
+Broadcast: Programa que si recibe "editor", abre un gedit o un notepad.
+Multicast: Versión del chat envía-recibe alternativo. Este se debe ejcutar en dos máquinas distintas.
 
 
 ## TCP
