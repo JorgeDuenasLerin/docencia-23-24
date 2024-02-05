@@ -134,10 +134,18 @@ Multicast: Versión del chat envía-recibe alternativo. Este se debe ejcutar en 
 
 ## TCP
 
-Pronto nuevos protocolos....
+Ver ejemplo y modificar para enviar y recibir información.
+
+### Ampliaciones
+
+Crea un cliente y un cliente y servidor TCP. El servidor contesta al cliente con el número de consonantes y vocales que tiene el mensaje
+
+Crea un cliente y un servidor TCP. El servidor manda al cliente el listado del directorio ```/var/files/``` como un String. Se puede hacer con el comando ```ls``` y ProcessBuilder o con las clases de Java para procesar ficheros y directorios.
+
+Crea un cliente y un servidor TCP. El servidor mandará un fichero PDF a cada cliente que se conecte. El PDF estará en el disco del servidor y su ruta estará almacenada en una constante.
 
 
-## Ideas Futuras
+### Ideas Futuras
 
 Comunicación multicast.
 Juego de adivina el número.

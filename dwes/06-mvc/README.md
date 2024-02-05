@@ -41,7 +41,22 @@ Preparando el entorno: [Virtualenvs](https://virtualenvwrapper.readthedocs.io/en
 
 [Tutorial Oficial](https://www.djangoproject.com/)
 
-[Ficheros](https://docs.djangoproject.com/es/5.0/topics/files/)
+### Mejoras
+
+Para admin [https://github.com/originalankur/awesome-django-admin](https://github.com/originalankur/awesome-django-admin)
+
+Listados y ranking... [Rank](https://djangopackages.org/)
+
+
+## Ejercicios
+
+1. Crea una página con y una relación 1:n entre las entidades, produce un listado usando funciones de cadenas.
+2. Crea una página con productos y etiquetas. Utiliza el sistema de templates.
+3. Crea un sitio de noticias con paginación.
+4. Crea un sitio en el que se permita tener un formulario con sugerencias.
+5. Crea un twitter (Solo post sin comentarios, los post no tienen imágenes)
+
+## Ejercicios python
 
 
 ### Ejercicios
