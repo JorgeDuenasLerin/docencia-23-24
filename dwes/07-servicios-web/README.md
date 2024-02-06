@@ -1,8 +1,6 @@
 # Servicios web
 
-## 
-
-Temario:
+## Temario
 
 - ¿Qué son?
 - Uso

@@ -27,22 +27,22 @@
 > Estado, autentificación, registro<br>
 > 20 horas
 
-06-mvc
+[06-mvc](06-mvc/)
 
 > Introducción a python. Desarollo Django. ORM<br>
 > 40 horas
 
-07-servicios-web
+[07-servicios-web](07-servicios-web/)
 
 > Generación de APIs, GraphQL, Autentificación<br>
 > 20 horas
 
-08-spa
+[08-spa](08-spa/)
 
 > SPA<br>
 > 20 horas
 
-09-híbridas
+[09-híbridas](09-h%C3%ADbridas/)
 
 > Aplicaciones web híbridas<br>
 > 15 horas
