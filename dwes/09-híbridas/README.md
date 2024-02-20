@@ -6,6 +6,12 @@ Una plataforma... ¡hay muchas!
 
 [https://cordova.apache.org/](https://cordova.apache.org/)
 
+## Install
+
+[https://cordova.apache.org/docs/en/latest/guide/cli/](https://cordova.apache.org/docs/en/latest/guide/cli/)
+
+[Cordova-Android](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html)
+
 ## extensión del módulo
 
 Flutter, ReactNative, etc...
