@@ -32,21 +32,34 @@ Ejemplo de entrega de la alumna ``Ana Garcia Pérez```
 
 Nombre del fichero: ```garciaperezana.tar.gz```
 
-Contenido descomprimido:
+Contenido descomprimido
+
+**Ejercicios separados**
 
 ```txt
 GarciaPerezAna/
-            \- ejercicio1
-            \- ejercicio2
-            \- ejercicio3
-            \- ejercicio4
+    \- ejercicio1
+    \- ejercicio2
+    \- ejercicio3
+    \- ejercicio4
+```
+
+**Ejercicios relacionados**
+
+```txt
+GarciaPerezAna/
+    \- ejercicio1y2
+        \- código
+        \- entrega.txt <- información de qué ejercicios se han realizado.
+    \- ejercicio3
+    \- ejercicio4
 ```
 
 En el caso de Android o Java, cada ejercicio estará en un paquete.
 
 El incumplimiento de este formato tendrá penalización de **0.5 puntos**.
 
-Formato d entrega:
+Formato de entrega:
 
 - Se habilitará en el aula virtual una tarea para la entrega del examen.
 - La entrega constará de un único fichero comprimido con el nombre del alumno.
