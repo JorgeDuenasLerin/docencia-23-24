@@ -47,6 +47,7 @@ En el caso de Android o Java, cada ejercicio estará en un paquete.
 El incumplimiento de este formato tendrá penalización de **0.5 puntos**.
 
 Formato d entrega:
+
 - Se habilitará en el aula virtual una tarea para la entrega del examen.
 - La entrega constará de un único fichero comprimido con el nombre del alumno.
 - El alumno deberá graba la realización del examen con OBS, custodiar la grabación y subirla a compartidos.
@@ -79,13 +80,17 @@ Los exámenes deberán ser grabados con OBS y custodiados por el alumno.
 ### Buenas prácticas
 
 Penalizaciones:
+
 - Cada línea de código con mala sangría o sangría inconsistente **restará 0.1 punto**.
 - Cada línea de configuración con mala sangría o sangría inconsistente **restará 0.1 punto**.
 - Cada número mágico o información constante dentro del código que pueda ser modificado en el futuro y que no esté almacenada en una constante **restará 0.1 puntos**.
-- Los valores constantes deben ser CONSTANTES (escritas con nombre mayúsculas), si no es así **restará 0.1 punto**
+- Los valores constantes deben ser CONSTANTES (escritas con nombre mayúsculas), si no es así **restará 0.1 punto**.
 - Cada incumplimiento de reglas de estilo del lenguaje de programación tendrá una **penalización de 0.1 puntos**.
-    - Java: Clases en mayúsuculas o PascalCase, métodos y variables camelCase
-    - Python: Clases en mayúsuclas o PascalCase, métodos y variables snake_case
+    - Java: Clases en mayúsuculas o PascalCase, métodos y variables camelCase.
+    - Python: Clases en mayúsuclas o PascalCase, métodos y variables snake_case.
+- Cada línea de código o fichero que no haga nada **restará 0.1 punto**.
 
 Fallos:
+
 - Cada fallo que ocurre en la aplicación por situaciones no contempladas que la hagan cerrarse de forma inesperada, produzca un error 500 o sea un fallo de seguridad **restará 0.5 puntos**
+
