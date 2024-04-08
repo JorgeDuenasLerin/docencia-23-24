@@ -1,0 +1,145 @@
+¿Qué hemos visto?
+Sesiones y teoría de criptografía
+
+¿Qué veremos?
+Elementos de autentificación web
+
+Siguente tema...
+Otros niveles de autentificación
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+Elementos a tener en cuenta:
+¿Qué elegiremos como identificador de usuario?
+.- Nombres de usuario
+.- emails
+
+¿Qué protocolo debo seguir en la trasmisión de la contraseña?
+.- HTTPS
+.- A día de hoy (velocidad proceso, precios, etc. ) es común usar https en toda
+   la web
+
+¿Cómo debo almacenar las contraseñas de forma segura?
+1º NUNCA almacenar como texto en claro
+2º NUNCA almacenar como texto en claro
+3º NUNCA almacenar como texto en claro
+Hash con salt usando un algoritmo criptográficamente seguro
+
+Explicación larga:
+http://php.net/manual/es/faq.passwords.php
+Función a usar:
+http://php.net/manual/en/function.password-hash.php
+
+¿Debo implementar política de contraseñas?
+.- Un mínimo de 8 con caracteres con minus, mayus, número y otros.
+.- Implementado en server. El javascript del cliente no es confiable.
+.- Un número máximo de intentos por hora
+   NOTA: Incluso en las APIs (Hack de famosos Apple)
+.- Cambio cada X tiempo (Con ojo porque es molesto)
+
+Cálculos de contraseñas y romperlas por fuerza bruta:
+https://openwall.info/wiki/john/benchmarks
+https://www.slashroot.in/how-are-passwords-stored-linux-understanding-hashing-shadow-utils
+
+
+¿Cómo puedo implementar el recuérdame?
+Aquí estamos hablando de una autentificación de varios días. Para el corto plazo
+usamos sesiones.
+1º NUNCA almacenes los credenciales del usuario (user:pass) en una cookie.
+2º NUNCA almacenes los credenciales del usuario (user:pass) en una cookie.
+3º NUNCA almacenes los credenciales del usuario (user:pass) en una cookie.
+...
+Almacenar tokens, veremos tokens más adelante.
+
+¿Cómo puedo recuperar una contraseña?
+.- Preguntas de seguridad. Implementado en base de datos.
+   NOTA: (Punto de vista mío) No me gusta
+.- Envío al correo de tokens, ver tokens.
+
+
+¡Tokens!
+Son soluciones temporales de autentificación, la temporalidad la debemos
+implementar nosotros almacenando el periodo de validez y gastándolos una vez
+usados.
+
+<?php
+function generateToken($length = 30)
+{
+    return bin2hex(random_bytes($length));
+}
+?>
+http://php.net/manual/es/function.random-bytes.php
+
+NOTA: Cuando un usuario cambie su contraseña todos sus tokens se deben invalidar
+
+
+CREATE TABLE `auth_tokens` (
+    `id` integer(11) not null UNSIGNED AUTO_INCREMENT,
+    `token` char(33),
+    `userid` integer(11) not null UNSIGNED,
+    `expires` integer(11), -- or datetime
+    PRIMARY KEY (`id`)
+);
+
+SELECT * FROM auth_tokens
+WHERE token = 'WBWgm2oMFxsiGRGQNJ6n8gtN3gOuQ2wjN8ZRjZtU0Mn' AND
+      user_id = 'loquesea@correo.es'
+      expires > now();
+
+
+
+
+¡¡MÁXIMA SEGURIDAD!!
+Si modifico el valor de la COOKIE y cambio la W por X, la comparación será más
+rápida... pueden sacar información por fuerza bruta.
+
+CREATE TABLE `auth_tokens` (
+    `id` integer(11) not null UNSIGNED AUTO_INCREMENT,
+    `selector` char(12),
+    `hashedValidator` char(64),
+    `userid` integer(11) not null UNSIGNED,
+    `expires` datetime,
+    PRIMARY KEY (`id`)
+);
+selector se genera de forma aleatoria
+token se genera de forma aleatoria
+Se almacena en la tabla el selector y un sha256 del token
+Se almacena en la COOKIE selector:token
+
+
+COOKIE tiene selector:token
+Separamos selector y token
+Buscamos en la base de datos el token de ese selector
+.-  Si no hay abortamos
+Comparamos un sha256(token) con los resultados (Solo habrá uno)
+Si es correcto cargamos en la sesión el id correspondiente.
+
+
+Tareas:
+Tarea 1
+Crea un diagrama de flujo para la página que procesa el login. Este diagrama
+debe contemplar TODAS las posisbilidades:
+1.- El usuario no tiene sesión activa en el servidor
+2.- El usuario tiene una sesión activa en el servidor
+3.- El usuario presenta una token de autentificación válido
+4.- El usuario presenta un token de autentificación pero ha expirado
+5.- El usuario envía la información del formulario y son credenciales válidas
+6.- El usuario envía la información del formulario y son credenciales invalidas
+7.- El usuario envía la información válida y ha marcado la opción recuérdame
+8.- Piensa si existe algún caso más.
+
+
+Tarea 2
+Implementa un cambiar contraseña a través de un enlace
+\- Primero realiza el diagrama de flujo.
+
+Fuentes:
+
+PHP best practices for user authentication and password security
+https://stackoverflow.com/questions/1624846/php-best-practices-for-user-authentication-and-password-security
+
+The definitive guide to form-based website authentication [closed]
+https://stackoverflow.com/questions/549/the-definitive-guide-to-form-based-website-authentication#477579
+
+What is the best way to implement “remember me” for a website? [closed]
+https://stackoverflow.com/questions/244882/what-is-the-best-way-to-implement-remember-me-for-a-website

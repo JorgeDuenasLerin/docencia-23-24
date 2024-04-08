@@ -22,30 +22,40 @@
 > Recuperación y guardado de información<br>
 > 20 horas
 
-05-aplicaciones-web
+[05-aplicaciones-web](05-aplicaciones-web/)
 
 > Estado, autentificación, registro<br>
 > 20 horas
 
-06-mvc
+[06-mvc](06-mvc/)
 
 > Introducción a python. Desarollo Django. ORM<br>
 > 40 horas
 
-07-servicios-web
+[07-servicios-web](07-servicios-web/)
 
 > Generación de APIs, GraphQL, Autentificación<br>
 > 20 horas
 
-08-spa
+[08-spa](08-spa/)
 
 > SPA<br>
 > 20 horas
 
-09-híbridas
+[09-híbridas](09-h%C3%ADbridas/)
 
 > Aplicaciones web híbridas<br>
 > 15 horas
+
+## Examen evaluación 1
+
+Contenidos:
+
+- Objetos, todo lo relacionado. Autoload
+- Bases de datos. CRUD, Ordenación, paginación, consultas preparadas
+- Formularios. Todo tipos de campos y validaciones. Campos opcionales
+- Ficheros. Codificación json serialización
+- Integración HTML-PHP
 
 ## Temporalización
 
