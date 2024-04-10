@@ -24,3 +24,22 @@ hijo <x>: <y> (Siendo x el número de hijo e y el número capicúa)
 ```
 
 El padre espera a que los hijos finalicen.
+
+[Código necesario C](https://stackoverflow.com/a/70477879/932888)
+
+```
+sprintf is returning the bytes and adds a null byte as well:
+
+# include <stdio.h>
+# include <string.h>
+
+int main() {
+    char buf[1024];
+    int n = sprintf( buf, "%d", 2415);
+    printf("%s %d\n", buf, n);
+}
+
+Output:
+
+2415 4
+```
