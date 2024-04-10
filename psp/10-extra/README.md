@@ -8,7 +8,7 @@ Crea un programa que acepte un número como parámetro de línea de comandos. El
 
 El programa creará otro proceso con la llamada al sistema ```fork```. El proceso padre generará ```n``` números aleatorios y se los enviará al proceso hijo a través de un pipe. El padre esperará a que el hijo termine (padre usa ```wait```).
 
-El hijo recibirá los números por el pipe e irá procesando el menor y el mayor. Cuando termine de recibir número el hijo escribirá por pantalla el número menor y el número mayor.
+El hijo recibirá los números por el pipe e irá procesando el menor y el mayor. Cuando termine de recibir números el hijo escribirá por pantalla el número menor y el número mayor.
 
 
 ### Ejercicio 2
@@ -22,3 +22,5 @@ Cuando encuentre un número capicúa escribirá:
 ```
 hijo <x>: <y> (Siendo x el número de hijo e y el número capicúa)
 ```
+
+El padre espera a que los hijos finalicen.
