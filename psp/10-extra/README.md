@@ -6,7 +6,7 @@
 
 Crea un programa que acepte un número como parámetro de línea de comandos. El número recibido indicará la cantidad de números aleatorios generados.
 
-El programa creará otro proceso con la llamada al sistema ````fork```. El proceso padre generará ```n``` números aleatorios y se los enviará al proceso hijo a través de un pipe. El padre esperará a que el hijo termine (padre usa ```wait```).
+El programa creará otro proceso con la llamada al sistema ```fork```. El proceso padre generará ```n``` números aleatorios y se los enviará al proceso hijo a través de un pipe. El padre esperará a que el hijo termine (padre usa ```wait```).
 
 El hijo recibirá los números por el pipe e irá procesando el menor y el mayor. Cuando termine de recibir número el hijo escribirá por pantalla el número menor y el número mayor.
 
