@@ -24,9 +24,10 @@ Se requiere desarrollar un sistema que maneje diferentes tipos de alertas (warni
 #### Clases
 
 - Alerta: Esta será la clase base que contiene propiedades como titulo y mensaje. Además, define el método abstracto mostrar() que todas las subclases implementarán de acuerdo a su tipo específico.
-- AlertaWarning: Extiende de Alerta. Implementa el método mostrar() para mostrar el mensaje con el título subrayado en amarillo y un icono de admiración.
-- AlertaError: Extiende de Alerta. Implementa el método mostrar() para mostrar el mensaje con el título subrayado en rojo y un icono de aspa.
+- AlertaWarning: Extiende de Alerta. Implementa el método mostrar() para mostrar el mensaje con el título subrayado en amarillo y un icono de admiración. (Se mostrará en un div con un h1 y un p)
+- AlertaError: Extiende de Alerta. Implementa el método mostrar() para mostrar el mensaje con el título subrayado en rojo y un icono de aspa. (Se mostrará en un div con un h1 y un p)
 - AlertaAlarma: Extiende de Alerta. Implementa el método mostrar() para mostrar un mensaje de alerta emergente en la pantalla.
+
 
 #### Requisitos
 
