@@ -43,3 +43,39 @@ Output:
 
 2415 4
 ```
+
+
+### Ejercicio 3
+Escribe un programa en C que acepte un número N como parámetro de línea de comandos. Este número N representará la cantidad de procesos hijo que el proceso padre debe crear utilizando fork. Cada proceso hijo debe calcular la letra del DNI para un rango específico de números, dividiendo el espacio total (desde 0 hasta 99999999) en N partes iguales.
+
+Especificaciones:
+
+- Cada hijo calculará la letra del DNI para su rango asignado de números y escribirá en un archivo único los resultados en el formato "DNI - Letra", uno por línea.
+- Los archivos serán nombrados dni_output_<n>.txt, donde <n> es el número del proceso hijo.
+- El proceso padre debe esperar a que todos los hijos terminen su ejecución antes de imprimir en la consola "Procesado completado para todos los hijos".
+- Detalles del cálculo de la letra del DNI:
+- La letra del DNI en España se calcula dividiendo el número del DNI por 23 y el residuo determina la letra según una tabla predefinida de letras (por ejemplo, TRWAGMYFPDXBNJZSQVHLCKE).
+
+Consideraciones:
+
+- Usa wait para asegurar que el padre espere por cada hijo.
+- Emplea fprintf para escribir en los archivos.
+- Utiliza sprintf para construir los strings que necesitas escribir en el archivo.
+
+### Ejercicio 4
+
+Escribe un programa en C que implemente un sistema simple de notificaciones usando señales entre procesos. El programa tendrá un proceso padre que actúa como un monitor de eventos y varios procesos hijo que simulan eventos aleatorios.
+
+Especificaciones:
+
+- Al iniciar, el programa debe aceptar un número M como parámetro de línea de comandos, indicando la cantidad de procesos hijo a crear.
+- Cada proceso hijo simulará la ocurrencia de un evento aleatorio (por ejemplo: temperatura alta, presión baja, etc. Son ejemplos, no hay que programar el tipo de señal. ) después de un tiempo aleatorio entre 1 y 5 segundos.
+- Cuando un hijo detecta un evento, debe enviar una señal (puedes usar SIGUSR1) al proceso padre.
+- El proceso padre, al recibir la señal de cualquier hijo, debe imprimir un mensaje que incluya el PID del hijo y un mensaje descriptivo del tipo de evento (el mensaje puede ser genérico, como "Evento detectado por [PID]").
+
+Detalles adicionales:
+
+- Los hijos deben dormir (sleep) un tiempo aleatorio antes de enviar la señal para simular el retraso en la detección de eventos.
+- El proceso padre debe manejar las señales para interceptar SIGUSR1 y responder adecuadamente.
+- Una vez que un proceso hijo envía su señal, debe terminar su ejecución.
+- El padre espera que se ejecuten todos los hijos.
