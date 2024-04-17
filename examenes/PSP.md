@@ -27,3 +27,14 @@ ideas de procesado:
 - procesado de números primos
 - procesado de letra dni
 - algún otro algoritmo que requiera pensar poco
+
+
+## Procesos Thread Java
+
+## TCP-UDP
+
+## Servicios
+
+## Seguridad
+
+## MD5

@@ -46,6 +46,7 @@ Output:
 
 
 ### Ejercicio 3
+
 Escribe un programa en C que acepte un número N como parámetro de línea de comandos. Este número N representará la cantidad de procesos hijo que el proceso padre debe crear utilizando fork. Cada proceso hijo debe calcular la letra del DNI para un rango específico de números, dividiendo el espacio total (desde 0 hasta 99999999) en N partes iguales.
 
 Especificaciones:
@@ -79,3 +80,29 @@ Detalles adicionales:
 - El proceso padre debe manejar las señales para interceptar SIGUSR1 y responder adecuadamente.
 - Una vez que un proceso hijo envía su señal, debe terminar su ejecución.
 - El padre espera que se ejecuten todos los hijos.
+
+### Ejercicio 5
+
+Crea un programa en C que simule un simple sistema de cálculo con un proceso padre que interactúa con el usuario y un proceso hijo que realiza los cálculos. El padre mostrará un menú para que el usuario seleccione entre sumar, restar o salir, y enviará los detalles de la operación al hijo a través de una tubería. El hijo procesará estos datos y enviará el resultado de vuelta al padre a través de otra tubería.
+
+Especificaciones:
+
+- El programa debe mostrar un menú continuamente hasta que el usuario seleccione la opción de "salir".
+- El menú ofrecerá las opciones:
+    - Sumar dos números.
+    - Restar dos números.
+    - Salir.
+- El proceso padre recoge la elección del usuario. Si es una operación, también solicita dos números y los envía, junto con la operación, al hijo a través de una tubería.
+- El proceso hijo recibe los datos, realiza el cálculo y envía el resultado de vuelta al padre a través de otra tubería.
+- Si el usuario selecciona "salir", el padre enviará una señal de terminación (SIGKILL, es decir, señal -9) al hijo para terminar su ejecución de manera inmediata y luego el padre terminará su propia ejecución.
+
+Detalles adicionales:
+- Se deben usar dos tuberías: una para enviar datos del padre al hijo y otra para enviar el resultado de vuelta al padre.
+- El padre debe manejar adecuadamente la apertura y cierre de los extremos de las tuberías para evitar bloqueos y fugas de recursos.
+- Implementa una gestión adecuada de errores para la creación de procesos y tuberías.
+- Asegúrate de que el padre envía la señal SIGKILL al hijo solo cuando el usuario elija salir, lo que garantiza una terminación limpia del hijo antes de que el padre también termine.
+
+Estructura del programa:
+- Menú interactivo: El padre muestra el menú y recoge la elección del usuario.
+- Comunicación padre-hijo: El padre envía la operación y los números al hijo a través de una tubería, y recibe los resultados del cálculo del hijo a través de otra tubería.
+- Terminación del hijo: Cuando el usuario elige salir, el padre envía una señal SIGKILL al hijo para terminar su proceso de manera inmediata.
