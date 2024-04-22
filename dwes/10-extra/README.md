@@ -102,3 +102,39 @@ Vistas y URLs:
 
 - Implementa una vista principal que liste todos los meses del año.
 - Al seleccionar un mes, la aplicación deberá mostrar todas las frutas y verduras disponibles durante ese mes. Esto incluye productos cuya temporada abarca ese mes y los que están disponibles todo el año.
+
+
+# s4 abril
+
+## Día de la tierra
+
+Crear un formulario donde los usuarios puedan registrar y compartir acciones ambientales específicas que ayuden a combatir el cambio climático, inspirando a otros a tomar medidas similares. También habrá un listado de las acciones registradas.
+
+Acción tendrá:
+
+- Fecha (Date)
+- Lugar (Cadena)
+- Nombre (o anónimo)
+- Descripción (Campo opcional)
+- foto de la acción 
+
+Nombre y descripción son opcionales.
+
+En la página de listado aparecerán por fecha en orden descendente.
+
+## Fallout (DJANGO)
+
+Crea una web para mostrar los personajes de Fallout con imágenes.
+
+Personaje:
+
+- Nombre
+- [Slug](https://learndjango.com/tutorials/django-slug-tutorial)
+- Descripción
+- Foto Portada
+- Foto Detalle
+
+Crea un web con el listado de personajes, ahí no aparecerá la descripción y se mostrará la foto de portada. Cuando pinches se usará el slug para ir al detalle y mostrar la otra foto y su descripción.
+
+
+
