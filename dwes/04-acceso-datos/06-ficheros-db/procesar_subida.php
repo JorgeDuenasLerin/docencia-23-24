@@ -39,15 +39,17 @@ if(isset($_FILES["imagen_perfil"])){
             // Guardar la ruta de la imagen en la base de datos
             // TODO: 
 
-            $sql = "UPDATE usuarios (perfil_img) VALUES (:path_imagen_perfil)";
-            $conn->prepare($sql);
+            $sql = "UPDATE usuarios (perfil_img) VALUES (:path_imagen_perfil) WHERE id = :id_user";
+            $consulta = $db->prepare($sql);
+            $consulta->bindParam(":path_imagen_perfil", $archivo, PDO::PARAM_STR);
+            $consulta->bindParam(":id", $id, PDO::PARAM_INT);
+            $resultado = $consulta->execute();
 
-            /*
-            if ($conn->query($sql) === TRUE) {
+            if($resultado){{
                 echo "La imagen ". basename($_FILES["imagen_perfil"]["name"]). " ha sido subida.";
             } else {
                 echo "Error al guardar la imagen en la base de datos: " . $conn->error;
-            }*/
+            }
             
         } else {
             echo "Hubo un error al subir tu archivo.";
