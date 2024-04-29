@@ -138,3 +138,26 @@ Crea un web con el listado de personajes, ahí no aparecerá la descripción y s
 
 
 
+
+
+# s1 Mayo
+
+## Resultados de Rugby - PHP
+
+Página para introducir resultados de rugby de la selección Española. Un resultado tiene:
+
+- País
+- Victoria|Empate|Derrota
+- Resultado
+
+Estará paginado y permitirá ordenar
+
+## Página para subir música - Django
+
+Crea una página con un formulario público, un listado y un área de administración. La página almacenará información de mp3 de música. El modelo tendrá:
+
+- Nombre
+- Tipo de música (Select)
+- Fichero
+
+La página de listado estará paginada.
