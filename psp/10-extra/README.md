@@ -131,3 +131,34 @@ Estructura del programa:
 - Determinación de Primalidad en los Hijos: Cada hijo genera un número aleatorio, comprueba si es primo, y termina con un código de estado adecuado.
 - Recopilación de Resultados en el Padre: El padre recoge y analiza los estados de finalización para contar cuántos números eran primos y cuántos no.
 - Reporte de Resultados: El padre imprime los resultados de cuántos números fueron determinados como primos y cuántos como no primos.
+
+
+## Java
+
+### Mayo s3
+
+#### Programa de Sincronización de Threads para una Tienda de Productos Online:
+
+Desarrolla un sistema en Java para una tienda de productos online donde múltiples usuarios pueden agregar o quitar productos de su carrito de compras simultáneamente. Para evitar inconsistencias de datos debido a accesos concurrentes, implementa un mecanismo de sincronización de threads.
+
+Crea una clase CarritoCompras que maneje una lista de Productos. Utiliza métodos sincronizados para añadir y eliminar productos del carrito. Implementa una simulación donde varios threads representan diferentes usuarios que modifican el carrito al mismo tiempo. Asegúrate de que los cambios en el carrito de compras reflejen correctamente la suma y eliminación concurrente de productos sin errores de sincronización.
+
+Ten en cuenta que en esta tienda especial varios usuarios comparten el carrito. El carrito tendrá capacidad para 10 elementos. Los usuario añaden 4 elementos y eliminan 2, estas operaciones están entremezcladas de forma aleatoria. De esta forma el número total de productos que cada usuario aporta es de 2. Cuando un usuario quiere añadir un elemento y el carrito está lleno, el usuario se bloquea hasta que se libere un hueco. Entre acción cada usuario espera un tiempo aleatorio entre 500 y 1500 milisegundos.
+
+Crea un programa principal con un carrito para 10 elementos y 5 usuarios. NOTA: Al finalizar el programa el carrito debe estar lleno.
+
+#### Programa de Comunicación UDP para un Sistema de Conducción Autónoma:
+
+En un sistema de conducción autónoma, diferentes componentes del sistema (como sensores y procesadores de imagen) necesitan comunicarse en tiempo real. Implementa un sistema de comunicaciones UDP en Java que permita la transmisión de datos críticos, como la distancia a obstáculos, entre estos componentes.
+
+Desarrolla un programa en Java utilizando sockets UDP para permitir la comunicación entre un sensor de distancia y un sistema de procesamiento central en un vehículo autónomo. El sensor debe enviar periódicamente la información de la distancia a obstáculos al procesador central. Implementa tanto el cliente (sensor) como el servidor (procesador) y asegura que los datos se transmitan de manera eficiente y sin errores, considerando aspectos como la pérdida de paquetes y la latencia.
+
+Crea un programa principal en el que haya 5 sensores y un procesador. El procesador escribirá en un log la distancia recibida, el identificador del sensor y la hora.
+
+#### Programa HTTP para un Servicio de Música:
+
+Un servicio de streaming de música permite a los usuarios acceder a una amplia biblioteca de canciones a través de la web. Desarrolla un sistema en Java que utilice HTTP para manejar solicitudes de los usuarios, permitiendo buscar canciones y recibir información sobre ellas. Las canciones están en un directorio que se especifica por línea de comandos.
+
+Implementa un servidor web en Java multithread que maneje solicitudes HTTP de clientes buscando canciones en el directorio. El servidor debe poder recibir solicitudes que contengan la cadena a buscar. El servidor generará un listado de canciones.
+
+El servidor también permite descargar la canción.
