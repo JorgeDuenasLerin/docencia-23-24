@@ -201,3 +201,29 @@ Desarrollar un sistema en la que la gente pueda comentar memes. Los memes se sub
 Desde la parte pública se pueden enviar formularios para comentar cada meme. NO se pueden comentar los comentarios (Solo hay un nivel de comentarios)
 
 En la página de listado aparecen los memes (imagen y descripción) y cuando pinchas en uno te vas al detalle, esto te permite ver los comentarios ordenados por el más reciente primeros. También puedes generar nuevos comentario.
+
+# s3 Mayo
+
+## DWES - DAW
+
+Desarrolla una aplicación web en PHP que permita a los usuarios ver y gestionar una lista de artículos. Cada artículo tendrá un título, un contenido y una fecha de publicación. Los artículos se almacenarán en una base de datos MySQL. Además, la aplicación deberá soportar URLs amigables utilizando la reescritura de URLs de Apache.
+
+## Django API
+
+Desarrollar una API RESTful utilizando Django y Django Rest Framework (DRF) para gestionar una galería de obras de arte. Además, crear un área de administración personalizada para gestionar estas obras de arte.
+
+- Crear un nuevo proyecto Django llamado galeria.
+- Crear una aplicación llamada obras.
+
+Modelo de Datos:
+
+Definir un modelo ObraDeArte con los siguientes campos:
+- titulo (CharField, máximo 200 caracteres): Título de la obra de arte.
+- artista (CharField, máximo 100 caracteres): Nombre del artista.
+- descripcion (TextField): Descripción detallada de la obra de arte.
+- fecha_creacion (DateField): Fecha en la que se creó la obra de arte.
+- precio (DecimalField, máximo 10 dígitos con 2 decimales): Precio de la obra de arte.
+- en_venta (BooleanField, por defecto True): Indicador de si la obra está en venta.
+- imagen (ImageField, opcional): Imagen de la obra de arte.
+
+Necesitamos: área de administración, parte pública de la web navegable con slugs y un API para que terceros trabajen con nuestra información.
