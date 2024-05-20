@@ -61,6 +61,10 @@ Listados y ranking... [Rank](https://djangopackages.org/)
 4. Crea un aplicación con un carrusel de fotos administrada desde el admin. Habrá 5 fotos con descripción.
 
 
+### Slug
+
+[Tutorial](https://learndjango.com/tutorials/django-slug-tutorial)
+
 ### Más Ejercicios
 
 x. Crea un sitio de noticias con paginación. (Ver paginación)
