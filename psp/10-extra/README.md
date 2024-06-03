@@ -162,3 +162,32 @@ Un servicio de streaming de música permite a los usuarios acceder a una amplia 
 Implementa un servidor web en Java multithread que maneje solicitudes HTTP de clientes buscando canciones en el directorio. El servidor debe poder recibir solicitudes que contengan la cadena a buscar. El servidor generará un listado de canciones.
 
 El servidor también permite descargar la canción.
+
+### Junio
+
+#### Fábrica de coches
+
+En una fábrica de coches, se utilizan múltiples líneas de ensamblaje que operan en paralelo para ensamblar diferentes partes de un coche. Cada línea de ensamblaje está gestionada por un thread en Java. De forma infinita "Comienza ensamblaje de coche", espera un tiempo aleatorio entre 2 y 3 segundos y "Finaliza ensamblado de coche".
+
+Para garantizar que cada coche ensamblado pase por una inspección de calidad antes de salir de la fábrica, se utiliza un thread inspector que revisa los coches ensamblados. El inspector tiene acceso a un array de líneas de ensamblado, irá una a una intentando realizar la inspección. Si al llegar a una no hay coche que revisar esperará a que haya un coche terminado.
+
+Implementa un sistema en Java que gestione la sincronización entre las líneas de ensamblaje y el inspector. Utiliza synchronized, wait, notify o notifyAll para resolver el problema de sincronización.
+
+Ejemplo de Ejecución:
+
+- Tres threads (líneas de ensamblaje) ensamblan coches.
+- Un thread (inspector) revisa los coches ensamblados.
+- Una vez que un coche está ensamblado, el thread de la línea de ensamblaje debe notificar al inspector.
+- Si una línea ha terminado pero el coche no ha sido revisado debe esperar.
+
+#### Almacenamiento de Ramos y Peticiones UDP
+
+En una floristería, varios empleados están encargados de preparar ramos de flores para los pedidos de los clientes. La floristería tiene espacio para almacenar hasta 30 ramos de flores generados. Cada empleado (thread) prepara los ramos y los coloca en el almacenamiento. Si el almacenamiento está lleno, el empleado espera hasta que haya espacio disponible.
+
+Las peticiones de ramos llegan a través de UDP. Un thread servidor atiende estas peticiones, verificando si hay suficientes ramos en el almacenamiento. Si hay suficientes ramos, se quitan del almacenamiento y se notifica a los generadores. El servidor devuelve al cliente el número de ramos que se le han dado, o -1 si no hay suficientes ramos disponibles.
+
+Problema:
+- Genere ramos en threads empleados con tiempos de generación entre 3 y 4 segundos.
+- Mantenga un almacenamiento con capacidad para 30 ramos.
+- Utilice UDP para recibir peticiones de ramos de los clientes y responder con la cantidad de ramos entregados (o -1 si no hay suficientes).
+- Sincronice los threads utilizando synchronized, wait, notify o notifyAll.
