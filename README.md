@@ -7,7 +7,9 @@ Módulos impartidos en el Juan de la Cierva durante 2023/24
     - [Despliegue aplicaciones web](daw/README.md)
 - **Desarrollo multiplataforma**
     - [Programación de servicios y procesos](psp/README.md)
+      - [Código](https://github.com/JorgeDuenasLerin/programacion-de-servicios-y-procesos)
     - [Programación multimedia y dispositivos móviles](pmdm/README.md)
+      - [Código](https://github.com/JorgeDuenasLerin/PMDM-2324)
 
 ## Calendario 2023/24
 
